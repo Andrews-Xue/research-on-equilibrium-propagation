@@ -1,26 +1,3 @@
-# MIT License
-
-# Copyright (c) 2020 Simon Schug, João Sacramento
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
-
 import argparse
 import json
 import logging
@@ -32,15 +9,7 @@ from lib import config, data, energy, train, utils
 
 
 def load_default_config(energy):
-    """
-    Load default parameter configuration from file.
 
-    Args:
-        tasks: String with the energy name
-
-    Returns:
-        Dictionary of default parameters for the given energy
-    """
     if energy == "restr_hopfield":
         default_config = "etc/energy_restr_hopfield.json"
     elif energy == "cond_gaussian":
@@ -55,15 +24,7 @@ def load_default_config(energy):
 
 
 def parse_shell_args(args):
-    """
-    Parse shell arguments for this script.
 
-    Args:
-        args: List of shell arguments
-
-    Returns:
-        Dictionary of shell arguments
-    """
     parser = argparse.ArgumentParser(
         description="Train an energy-based model on MNIST using Equilibrium Propagation."
     )
@@ -95,12 +56,7 @@ def parse_shell_args(args):
 
 
 def run_energy_model_mnist(cfg):
-    """
-    Main script.
 
-    Args:
-        cfg: Dictionary defining parameters of the run
-    """
     # Initialize seed if specified (might slow down the model)
     if cfg['seed'] is not None:
         torch.manual_seed(cfg['seed'])
@@ -125,9 +81,7 @@ def run_energy_model_mnist(cfg):
     w_optimizer = utils.create_optimizer(model, cfg['optimizer'],  lr=cfg['learning_rate'])
 
     # Create torch data loaders with the MNIST data set
-    '''
-    mnist_train, mnist_test = data.create_mnist_loaders(cfg['batch_size'])
-    '''
+
     Fmnist_train, Fmnist_test = data.create_Fmnist_loaders(cfg['batch_size'])
  
     logging.info("Start training with parametrization:\n{}".format(
