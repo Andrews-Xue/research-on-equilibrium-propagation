@@ -1,25 +1,3 @@
-# MIT License
-
-# Copyright (c) 2020 Simon Schug, João Sacramento
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 import abc
 
 import torch
@@ -28,23 +6,7 @@ from lib import config
 
 
 class EnergyBasedModel(abc.ABC, torch.nn.Module):
-    """
-    Abstract base class for all energy-based models.
 
-    Attributes:
-        batch_size: Number of samples per batch
-        c_energy: Cost function to nudge last layer
-        clamp_du: List of boolean values tracking if the corresponding layer
-            is clamped to a fixed value
-        E: Current energy of the model. Object has the responsibility of
-            maintaining the energy consistent if u or W change.
-        dimensions: Dimensions of the underlying multilayer perceptron
-        n_layers: Number of layers of the multilayer perceptron
-        phi: List of activation functions for each layer
-        W: ModuleList for the linear layers of the multilayer perceptron
-        u: List of pre-activations
-
-    """
     def __init__(self, dimensions, c_energy, batch_size, phi):
         super(EnergyBasedModel, self).__init__()
 
@@ -68,45 +30,28 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
 
     @abc.abstractmethod
     def fast_init(self):
-        """
-        Fast initilization of pre-activations.
-        """
+
         return
 
     @abc.abstractmethod
     def update_energy(self):
-        """
-        Update the energy.
-        """
+
         return
 
     def clamp_layer(self, i, u_i):
-        """
-        Clamp the specified layer.
 
-        Args:
-            i: Index of layer to be clamped
-            u_i: Tensor to which the layer i is clamped
-        """
         self.u[i] = u_i
         self.clamp_du[i] = True
         self.update_energy()
 
     def release_layer(self, i):
-        """
-        Release (i.e. un-clamp) the specified layer).
 
-        Args:
-            i: Index of layer to be released
-        """
         self.u[i].requires_grad = True
         self.clamp_du[i] = False
         self.update_energy()
 
     def reset_state(self):
-        """
-        Reset the state of the system to a random (Normal) configuration.
-        """
+
         self.u = []
         for i in range(self.n_layers):
             self.u.append(torch.randn((self.batch_size, self.dimensions[i]),
@@ -115,29 +60,12 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
         self.update_energy()
 
     def set_C_target(self, target):
-        """
-        Set new target tensor for the cost function.
 
-        Args:
-            target: target tensor
-        """
         self.c_energy.set_target(target)
         self.update_energy()
 
     def u_relax(self, dt, n_relax, tol, tau):
-        """
-        Relax the neural state variables until a fixed point is obtained
-        with precision < tol or until the maximum number of steps n_relax is reached.
 
-        Args:
-            dt: Step size
-            n_relax: Maximum number of steps
-            tol: Tolerance/precision of relaxation
-            tau: Time constant
-
-        Returns:
-            Change in energy after relaxation
-        """
         E_init = self.E.clone().detach()
         E_prev = self.E.clone().detach()
 
@@ -155,16 +83,7 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
         return torch.sum(E_prev - E_init)
 
     def u_step(self, dt, tau):
-        """
-        Perform single relaxation step on the neural state variables.
 
-        Args:
-            dt: Step size
-            tau: Time constant
-
-        Returns:
-            Absolute change in pre-activations
-        """
         # Compute gradients wrt current energy
         self.zero_grad()
         batch_E = torch.sum(self.E)
@@ -185,29 +104,14 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
         return du_norm
 
     def w_get_gradients(self, loss=None):
-        """
-        Compute the gradient on the energy w.r.t. the parameters W.
 
-        Args:
-            loss: Optional loss to optimze for. Otherwise the mean energy is optimized.
-
-        Returns:
-            List of gradients for each layer
-        """
         self.zero_grad()
         if loss is None:
             loss = torch.mean(self.E)
         return torch.autograd.grad(loss, self.parameters())
 
     def w_optimize(self, free_grad, nudged_grad, w_optimizer):
-        """
-        Update weights using free and nudged phase gradients.
 
-        Args:
-            free_grad: List of free phase gradients
-            nudged_grad: List of nudged phase gradients
-            w_optimizer: torch.optim.Optimizer for the model parameters
-        """
         self.zero_grad()
         w_optimizer.zero_grad()
 
@@ -219,9 +123,7 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
         self.update_energy()
 
     def zero_grad(self):
-        """
-        Zero gradients for parameters and pre-activations.
-        """
+ 
         self.W.zero_grad()
         for u_i in self.u:
             if u_i.grad is not None:
@@ -230,20 +132,12 @@ class EnergyBasedModel(abc.ABC, torch.nn.Module):
 
 
 class ConditionalGaussian(EnergyBasedModel):
-    """
-    One example of an energy-based model that has a probabilistic interpretation as
-    the (negative) log joint probability of a conditional-Gaussian model.
-    Also see review by Bogacz and Whittington, 2019.
-    """
+
     def __init__(self, dimensions, c_energy, batch_size, phi):
         super(ConditionalGaussian, self).__init__(dimensions, c_energy, batch_size, phi)
 
     def fast_init(self):
-        """
-        The FF init is a very handy hack when working with the ConditionalGaussian
-        model, which allows reducing the number of fixed point iterations
-        significantly, and results in improved training for large dt steps.
-        """
+
         for i in range(self.n_layers - 1):
             self.u[i + 1] = self.W[i](self.phi[i](self.u[i])).detach()
             self.u[i + 1].requires_grad = not self.clamp_du[i + 1]
@@ -251,9 +145,7 @@ class ConditionalGaussian(EnergyBasedModel):
         self.update_energy()
 
     def update_energy(self):
-        """
-        Update the energy as the mean squared predictive error.
-        """
+
         self.E = 0
         for i in range(self.n_layers - 1):
             pred = self.W[i](self.phi[i](self.u[i]))
@@ -265,10 +157,7 @@ class ConditionalGaussian(EnergyBasedModel):
 
 
 class RestrictedHopfield(EnergyBasedModel):
-    """
-    The classical Hopfield energy in a restricted feedforward model
-    as used in the original equilibrium propagation paper by Scellier, 2017
-    """
+
     def __init__(self, dimensions, c_energy, batch_size, phi):
         super(RestrictedHopfield, self).__init__(dimensions, c_energy, batch_size, phi)
 
@@ -276,9 +165,7 @@ class RestrictedHopfield(EnergyBasedModel):
         raise NotImplementedError("Fast initialization not possible for the Hopfield model.")
 
     def update_energy(self):
-        """
-        Update the energy computed as the Hopfield Energy.
-        """
+
         self.E = 0
 
         for i, layer in enumerate(self.W):
