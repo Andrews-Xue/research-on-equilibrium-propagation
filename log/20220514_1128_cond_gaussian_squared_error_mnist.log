@@ -1,0 +1,1126 @@
+[INFO  11:28:08] Start training with parametrization:
+{
+    "batch_size": 200,
+    "beta": 1,
+    "c_energy": "squared_error",
+    "dataset": "mnist",
+    "dimensions": [
+        784,
+        1000,
+        10
+    ],
+    "dynamics": {
+        "dt": 0.1,
+        "n_relax": 20,
+        "tau": 1,
+        "tol": 0
+    },
+    "energy": "cond_gaussian",
+    "epochs": 100,
+    "fast_ff_init": true,
+    "learning_rate": 0.001,
+    "log_dir": "",
+    "nonlinearity": "softplus",
+    "optimizer": "adam",
+    "seed": 2022
+}
+[INFO  11:28:08] 0%:	E: 0.00	dE -77.45	batch_acc 0.1350
+[INFO  11:28:10] 10%:	E: 0.00	dE -19.17	batch_acc 0.6850
+[INFO  11:28:11] 20%:	E: 0.00	dE -13.76	batch_acc 0.7750
+[INFO  11:28:13] 30%:	E: 0.00	dE -13.67	batch_acc 0.7400
+[INFO  11:28:14] 40%:	E: 0.00	dE -11.42	batch_acc 0.8100
+[INFO  11:28:16] 50%:	E: 0.00	dE -13.12	batch_acc 0.7450
+[INFO  11:28:17] 60%:	E: 0.00	dE -11.24	batch_acc 0.8000
+[INFO  11:28:19] 70%:	E: 0.00	dE -8.51	batch_acc 0.8750
+[INFO  11:28:20] 80%:	E: 0.00	dE -11.30	batch_acc 0.7700
+[INFO  11:28:22] 90%:	E: 0.00	dE -10.32	batch_acc 0.8300
+[INFO  11:28:25] epoch: 1 	 test_acc: 0.8289 	 mean_E: 0.0000
+[INFO  11:28:25] 0%:	E: 0.00	dE -10.18	batch_acc 0.8050
+[INFO  11:28:27] 10%:	E: 0.00	dE -8.74	batch_acc 0.8950
+[INFO  11:28:28] 20%:	E: 0.00	dE -8.69	batch_acc 0.8450
+[INFO  11:28:30] 30%:	E: 0.00	dE -8.82	batch_acc 0.8550
+[INFO  11:28:31] 40%:	E: 0.00	dE -8.17	batch_acc 0.8850
+[INFO  11:28:33] 50%:	E: 0.00	dE -9.27	batch_acc 0.8400
+[INFO  11:28:34] 60%:	E: 0.00	dE -9.41	batch_acc 0.8400
+[INFO  11:28:36] 70%:	E: 0.00	dE -8.56	batch_acc 0.8750
+[INFO  11:28:37] 80%:	E: 0.00	dE -8.80	batch_acc 0.8550
+[INFO  11:28:39] 90%:	E: 0.00	dE -6.59	batch_acc 0.9050
+[INFO  11:28:42] epoch: 2 	 test_acc: 0.8546 	 mean_E: 0.0000
+[INFO  11:28:42] 0%:	E: 0.00	dE -7.56	batch_acc 0.8850
+[INFO  11:28:44] 10%:	E: 0.00	dE -7.49	batch_acc 0.8650
+[INFO  11:28:45] 20%:	E: 0.00	dE -7.01	batch_acc 0.8900
+[INFO  11:28:47] 30%:	E: 0.00	dE -6.98	batch_acc 0.9000
+[INFO  11:28:48] 40%:	E: 0.00	dE -8.67	batch_acc 0.8850
+[INFO  11:28:50] 50%:	E: 0.00	dE -8.12	batch_acc 0.8800
+[INFO  11:28:51] 60%:	E: 0.00	dE -8.14	batch_acc 0.8500
+[INFO  11:28:53] 70%:	E: 0.00	dE -7.04	batch_acc 0.8900
+[INFO  11:28:55] 80%:	E: 0.00	dE -7.33	batch_acc 0.9000
+[INFO  11:28:56] 90%:	E: 0.00	dE -6.17	batch_acc 0.9250
+[INFO  11:28:59] epoch: 3 	 test_acc: 0.8616 	 mean_E: 0.0000
+[INFO  11:28:59] 0%:	E: 0.00	dE -7.18	batch_acc 0.9050
+[INFO  11:29:01] 10%:	E: 0.00	dE -6.79	batch_acc 0.8800
+[INFO  11:29:02] 20%:	E: 0.00	dE -6.19	batch_acc 0.9150
+[INFO  11:29:04] 30%:	E: 0.00	dE -7.06	batch_acc 0.9050
+[INFO  11:29:05] 40%:	E: 0.00	dE -8.43	batch_acc 0.8600
+[INFO  11:29:07] 50%:	E: 0.00	dE -7.09	batch_acc 0.8900
+[INFO  11:29:08] 60%:	E: 0.00	dE -7.00	batch_acc 0.8900
+[INFO  11:29:10] 70%:	E: 0.00	dE -8.66	batch_acc 0.8550
+[INFO  11:29:11] 80%:	E: 0.00	dE -7.43	batch_acc 0.8850
+[INFO  11:29:13] 90%:	E: 0.00	dE -7.60	batch_acc 0.8500
+[INFO  11:29:16] epoch: 4 	 test_acc: 0.8681 	 mean_E: 0.0000
+[INFO  11:29:16] 0%:	E: 0.00	dE -5.27	batch_acc 0.9350
+[INFO  11:29:18] 10%:	E: 0.00	dE -6.89	batch_acc 0.8950
+[INFO  11:29:19] 20%:	E: 0.00	dE -7.87	batch_acc 0.8950
+[INFO  11:29:21] 30%:	E: 0.00	dE -6.28	batch_acc 0.9150
+[INFO  11:29:22] 40%:	E: 0.00	dE -7.67	batch_acc 0.8550
+[INFO  11:29:24] 50%:	E: 0.00	dE -6.13	batch_acc 0.9300
+[INFO  11:29:25] 60%:	E: 0.00	dE -7.11	batch_acc 0.8900
+[INFO  11:29:27] 70%:	E: 0.00	dE -6.42	batch_acc 0.9150
+[INFO  11:29:28] 80%:	E: 0.00	dE -7.41	batch_acc 0.8850
+[INFO  11:29:30] 90%:	E: 0.00	dE -7.22	batch_acc 0.8850
+[INFO  11:29:33] epoch: 5 	 test_acc: 0.8717 	 mean_E: 0.0000
+[INFO  11:29:33] 0%:	E: 0.00	dE -6.82	batch_acc 0.8950
+[INFO  11:29:34] 10%:	E: 0.00	dE -6.71	batch_acc 0.9050
+[INFO  11:29:36] 20%:	E: 0.00	dE -6.55	batch_acc 0.8850
+[INFO  11:29:38] 30%:	E: 0.00	dE -5.81	batch_acc 0.8800
+[INFO  11:29:39] 40%:	E: 0.00	dE -6.50	batch_acc 0.8950
+[INFO  11:29:41] 50%:	E: 0.00	dE -7.49	batch_acc 0.8750
+[INFO  11:29:42] 60%:	E: 0.00	dE -7.78	batch_acc 0.8650
+[INFO  11:29:44] 70%:	E: 0.00	dE -5.68	batch_acc 0.9050
+[INFO  11:29:45] 80%:	E: 0.00	dE -7.30	batch_acc 0.8500
+[INFO  11:29:47] 90%:	E: 0.00	dE -7.50	batch_acc 0.8700
+[INFO  11:29:50] epoch: 6 	 test_acc: 0.8745 	 mean_E: 0.0000
+[INFO  11:29:50] 0%:	E: 0.00	dE -6.87	batch_acc 0.8650
+[INFO  11:29:52] 10%:	E: 0.00	dE -8.37	batch_acc 0.8550
+[INFO  11:29:53] 20%:	E: 0.00	dE -6.82	batch_acc 0.8850
+[INFO  11:29:55] 30%:	E: 0.00	dE -6.28	batch_acc 0.8900
+[INFO  11:29:56] 40%:	E: 0.00	dE -5.85	batch_acc 0.9250
+[INFO  11:29:58] 50%:	E: 0.00	dE -5.33	batch_acc 0.9350
+[INFO  11:30:00] 60%:	E: 0.00	dE -5.91	batch_acc 0.9050
+[INFO  11:30:01] 70%:	E: 0.00	dE -7.12	batch_acc 0.8850
+[INFO  11:30:03] 80%:	E: 0.00	dE -5.69	batch_acc 0.9300
+[INFO  11:30:04] 90%:	E: 0.00	dE -6.87	batch_acc 0.8650
+[INFO  11:30:07] epoch: 7 	 test_acc: 0.8752 	 mean_E: 0.0000
+[INFO  11:30:08] 0%:	E: 0.00	dE -5.97	batch_acc 0.8950
+[INFO  11:30:09] 10%:	E: 0.00	dE -6.36	batch_acc 0.8800
+[INFO  11:30:10] 20%:	E: 0.00	dE -6.19	batch_acc 0.9000
+[INFO  11:30:12] 30%:	E: 0.00	dE -7.19	batch_acc 0.8650
+[INFO  11:30:14] 40%:	E: 0.00	dE -6.36	batch_acc 0.8900
+[INFO  11:30:15] 50%:	E: 0.00	dE -6.71	batch_acc 0.8900
+[INFO  11:30:17] 60%:	E: 0.00	dE -6.06	batch_acc 0.9200
+[INFO  11:30:19] 70%:	E: 0.00	dE -5.66	batch_acc 0.9200
+[INFO  11:30:20] 80%:	E: 0.00	dE -6.95	batch_acc 0.9000
+[INFO  11:30:22] 90%:	E: 0.00	dE -6.62	batch_acc 0.8950
+[INFO  11:30:25] epoch: 8 	 test_acc: 0.8768 	 mean_E: 0.0000
+[INFO  11:30:25] 0%:	E: 0.00	dE -7.14	batch_acc 0.8750
+[INFO  11:30:27] 10%:	E: 0.00	dE -5.81	batch_acc 0.9150
+[INFO  11:30:28] 20%:	E: 0.00	dE -6.16	batch_acc 0.8850
+[INFO  11:30:30] 30%:	E: 0.00	dE -5.25	batch_acc 0.9250
+[INFO  11:30:31] 40%:	E: 0.00	dE -6.76	batch_acc 0.8950
+[INFO  11:30:33] 50%:	E: 0.00	dE -6.06	batch_acc 0.9150
+[INFO  11:30:35] 60%:	E: 0.00	dE -6.34	batch_acc 0.8800
+[INFO  11:30:36] 70%:	E: 0.00	dE -6.03	batch_acc 0.9000
+[INFO  11:30:38] 80%:	E: 0.00	dE -6.12	batch_acc 0.9100
+[INFO  11:30:39] 90%:	E: 0.00	dE -5.88	batch_acc 0.9150
+[INFO  11:30:42] epoch: 9 	 test_acc: 0.8813 	 mean_E: 0.0000
+[INFO  11:30:42] 0%:	E: 0.00	dE -6.61	batch_acc 0.8950
+[INFO  11:30:44] 10%:	E: 0.00	dE -5.91	batch_acc 0.9000
+[INFO  11:30:46] 20%:	E: 0.00	dE -6.79	batch_acc 0.8850
+[INFO  11:30:47] 30%:	E: 0.00	dE -5.41	batch_acc 0.9150
+[INFO  11:30:49] 40%:	E: 0.00	dE -5.27	batch_acc 0.9000
+[INFO  11:30:50] 50%:	E: 0.00	dE -4.50	batch_acc 0.9450
+[INFO  11:30:52] 60%:	E: 0.00	dE -6.52	batch_acc 0.9100
+[INFO  11:30:53] 70%:	E: 0.00	dE -5.58	batch_acc 0.9200
+[INFO  11:30:55] 80%:	E: 0.00	dE -4.73	batch_acc 0.9250
+[INFO  11:30:56] 90%:	E: 0.00	dE -7.66	batch_acc 0.8450
+[INFO  11:30:59] epoch: 10 	 test_acc: 0.8824 	 mean_E: 0.0000
+[INFO  11:31:00] 0%:	E: 0.00	dE -6.35	batch_acc 0.9100
+[INFO  11:31:01] 10%:	E: 0.00	dE -5.18	batch_acc 0.9250
+[INFO  11:31:03] 20%:	E: 0.00	dE -4.78	batch_acc 0.9450
+[INFO  11:31:04] 30%:	E: 0.00	dE -5.75	batch_acc 0.9300
+[INFO  11:31:06] 40%:	E: 0.00	dE -5.83	batch_acc 0.9150
+[INFO  11:31:07] 50%:	E: 0.00	dE -4.80	batch_acc 0.9350
+[INFO  11:31:09] 60%:	E: 0.00	dE -5.69	batch_acc 0.9100
+[INFO  11:31:10] 70%:	E: 0.00	dE -5.71	batch_acc 0.9150
+[INFO  11:31:12] 80%:	E: 0.00	dE -4.45	batch_acc 0.9250
+[INFO  11:31:14] 90%:	E: 0.00	dE -3.95	batch_acc 0.9600
+[INFO  11:31:17] epoch: 11 	 test_acc: 0.8848 	 mean_E: 0.0000
+[INFO  11:31:17] 0%:	E: 0.00	dE -5.58	batch_acc 0.9250
+[INFO  11:31:18] 10%:	E: 0.00	dE -4.25	batch_acc 0.9600
+[INFO  11:31:20] 20%:	E: 0.00	dE -5.46	batch_acc 0.9250
+[INFO  11:31:21] 30%:	E: 0.00	dE -5.35	batch_acc 0.9200
+[INFO  11:31:23] 40%:	E: 0.00	dE -5.40	batch_acc 0.9250
+[INFO  11:31:25] 50%:	E: 0.00	dE -6.15	batch_acc 0.9100
+[INFO  11:31:26] 60%:	E: 0.00	dE -5.40	batch_acc 0.9200
+[INFO  11:31:27] 70%:	E: 0.00	dE -5.32	batch_acc 0.9250
+[INFO  11:31:29] 80%:	E: 0.00	dE -5.77	batch_acc 0.9100
+[INFO  11:31:31] 90%:	E: 0.00	dE -4.97	batch_acc 0.9350
+[INFO  11:31:33] epoch: 12 	 test_acc: 0.8845 	 mean_E: 0.0000
+[INFO  11:31:34] 0%:	E: 0.00	dE -6.78	batch_acc 0.9050
+[INFO  11:31:35] 10%:	E: 0.00	dE -4.67	batch_acc 0.9200
+[INFO  11:31:36] 20%:	E: 0.00	dE -5.11	batch_acc 0.9250
+[INFO  11:31:38] 30%:	E: 0.00	dE -4.91	batch_acc 0.9400
+[INFO  11:31:40] 40%:	E: 0.00	dE -5.30	batch_acc 0.9400
+[INFO  11:31:41] 50%:	E: 0.00	dE -5.61	batch_acc 0.9100
+[INFO  11:31:43] 60%:	E: 0.00	dE -5.96	batch_acc 0.9000
+[INFO  11:31:44] 70%:	E: 0.00	dE -5.71	batch_acc 0.9050
+[INFO  11:31:46] 80%:	E: 0.00	dE -5.39	batch_acc 0.9200
+[INFO  11:31:47] 90%:	E: 0.00	dE -5.69	batch_acc 0.9150
+[INFO  11:31:50] epoch: 13 	 test_acc: 0.8857 	 mean_E: 0.0000
+[INFO  11:31:51] 0%:	E: 0.00	dE -4.32	batch_acc 0.9400
+[INFO  11:31:52] 10%:	E: 0.00	dE -4.52	batch_acc 0.9350
+[INFO  11:31:54] 20%:	E: 0.00	dE -3.92	batch_acc 0.9450
+[INFO  11:31:55] 30%:	E: 0.00	dE -5.66	batch_acc 0.9300
+[INFO  11:31:57] 40%:	E: 0.00	dE -5.29	batch_acc 0.9200
+[INFO  11:31:59] 50%:	E: 0.00	dE -5.74	batch_acc 0.9100
+[INFO  11:32:00] 60%:	E: 0.00	dE -4.46	batch_acc 0.9500
+[INFO  11:32:02] 70%:	E: 0.00	dE -5.66	batch_acc 0.9000
+[INFO  11:32:03] 80%:	E: 0.00	dE -5.84	batch_acc 0.9050
+[INFO  11:32:05] 90%:	E: 0.00	dE -4.69	batch_acc 0.9300
+[INFO  11:32:08] epoch: 14 	 test_acc: 0.8860 	 mean_E: 0.0000
+[INFO  11:32:08] 0%:	E: 0.00	dE -5.14	batch_acc 0.9100
+[INFO  11:32:10] 10%:	E: 0.00	dE -4.83	batch_acc 0.9350
+[INFO  11:32:11] 20%:	E: 0.00	dE -5.77	batch_acc 0.9100
+[INFO  11:32:13] 30%:	E: 0.00	dE -5.32	batch_acc 0.9150
+[INFO  11:32:14] 40%:	E: 0.00	dE -5.37	batch_acc 0.9150
+[INFO  11:32:16] 50%:	E: 0.00	dE -5.13	batch_acc 0.9350
+[INFO  11:32:17] 60%:	E: 0.00	dE -4.47	batch_acc 0.9350
+[INFO  11:32:19] 70%:	E: 0.00	dE -5.08	batch_acc 0.9300
+[INFO  11:32:20] 80%:	E: 0.00	dE -5.20	batch_acc 0.9300
+[INFO  11:32:21] 90%:	E: 0.00	dE -5.08	batch_acc 0.9150
+[INFO  11:32:25] epoch: 15 	 test_acc: 0.8920 	 mean_E: 0.0000
+[INFO  11:32:25] 0%:	E: 0.00	dE -4.35	batch_acc 0.9350
+[INFO  11:32:26] 10%:	E: 0.00	dE -3.64	batch_acc 0.9500
+[INFO  11:32:28] 20%:	E: 0.00	dE -4.67	batch_acc 0.9250
+[INFO  11:32:29] 30%:	E: 0.00	dE -4.20	batch_acc 0.9550
+[INFO  11:32:31] 40%:	E: 0.00	dE -5.27	batch_acc 0.9450
+[INFO  11:32:33] 50%:	E: 0.00	dE -5.67	batch_acc 0.9100
+[INFO  11:32:34] 60%:	E: 0.00	dE -5.42	batch_acc 0.9250
+[INFO  11:32:36] 70%:	E: 0.00	dE -6.56	batch_acc 0.8950
+[INFO  11:32:37] 80%:	E: 0.00	dE -5.56	batch_acc 0.9000
+[INFO  11:32:39] 90%:	E: 0.00	dE -4.28	batch_acc 0.9550
+[INFO  11:32:42] epoch: 16 	 test_acc: 0.8918 	 mean_E: 0.0000
+[INFO  11:32:42] 0%:	E: 0.00	dE -5.10	batch_acc 0.9300
+[INFO  11:32:44] 10%:	E: 0.00	dE -4.65	batch_acc 0.9250
+[INFO  11:32:45] 20%:	E: 0.00	dE -5.43	batch_acc 0.9050
+[INFO  11:32:47] 30%:	E: 0.00	dE -4.26	batch_acc 0.9450
+[INFO  11:32:49] 40%:	E: 0.00	dE -6.11	batch_acc 0.9000
+[INFO  11:32:50] 50%:	E: 0.00	dE -4.25	batch_acc 0.9450
+[INFO  11:32:52] 60%:	E: 0.00	dE -4.73	batch_acc 0.9350
+[INFO  11:32:53] 70%:	E: 0.00	dE -4.50	batch_acc 0.9450
+[INFO  11:32:55] 80%:	E: 0.00	dE -5.51	batch_acc 0.9400
+[INFO  11:32:56] 90%:	E: 0.00	dE -4.01	batch_acc 0.9400
+[INFO  11:32:59] epoch: 17 	 test_acc: 0.8903 	 mean_E: 0.0000
+[INFO  11:32:59] 0%:	E: 0.00	dE -5.81	batch_acc 0.9000
+[INFO  11:33:01] 10%:	E: 0.00	dE -4.35	batch_acc 0.9350
+[INFO  11:33:02] 20%:	E: 0.00	dE -4.37	batch_acc 0.9400
+[INFO  11:33:04] 30%:	E: 0.00	dE -4.17	batch_acc 0.9450
+[INFO  11:33:05] 40%:	E: 0.00	dE -5.26	batch_acc 0.9350
+[INFO  11:33:07] 50%:	E: 0.00	dE -5.22	batch_acc 0.9350
+[INFO  11:33:08] 60%:	E: 0.00	dE -4.67	batch_acc 0.9350
+[INFO  11:33:10] 70%:	E: 0.00	dE -5.61	batch_acc 0.9250
+[INFO  11:33:11] 80%:	E: 0.00	dE -5.95	batch_acc 0.9150
+[INFO  11:33:13] 90%:	E: 0.00	dE -4.77	batch_acc 0.9400
+[INFO  11:33:16] epoch: 18 	 test_acc: 0.8895 	 mean_E: 0.0000
+[INFO  11:33:16] 0%:	E: 0.00	dE -4.22	batch_acc 0.9550
+[INFO  11:33:18] 10%:	E: 0.00	dE -4.33	batch_acc 0.9400
+[INFO  11:33:19] 20%:	E: 0.00	dE -5.68	batch_acc 0.9200
+[INFO  11:33:21] 30%:	E: 0.00	dE -4.16	batch_acc 0.9600
+[INFO  11:33:23] 40%:	E: 0.00	dE -5.63	batch_acc 0.9150
+[INFO  11:33:24] 50%:	E: 0.00	dE -4.83	batch_acc 0.9050
+[INFO  11:33:26] 60%:	E: 0.00	dE -5.70	batch_acc 0.9100
+[INFO  11:33:27] 70%:	E: 0.00	dE -4.10	batch_acc 0.9650
+[INFO  11:33:29] 80%:	E: 0.00	dE -4.75	batch_acc 0.9400
+[INFO  11:33:30] 90%:	E: 0.00	dE -3.38	batch_acc 0.9700
+[INFO  11:33:33] epoch: 19 	 test_acc: 0.8867 	 mean_E: 0.0000
+[INFO  11:33:34] 0%:	E: 0.00	dE -4.82	batch_acc 0.9350
+[INFO  11:33:35] 10%:	E: 0.00	dE -4.57	batch_acc 0.9150
+[INFO  11:33:37] 20%:	E: 0.00	dE -4.67	batch_acc 0.9250
+[INFO  11:33:38] 30%:	E: 0.00	dE -4.34	batch_acc 0.9450
+[INFO  11:33:40] 40%:	E: 0.00	dE -4.05	batch_acc 0.9650
+[INFO  11:33:41] 50%:	E: 0.00	dE -4.60	batch_acc 0.9400
+[INFO  11:33:43] 60%:	E: 0.00	dE -4.67	batch_acc 0.9350
+[INFO  11:33:44] 70%:	E: 0.00	dE -4.95	batch_acc 0.9350
+[INFO  11:33:46] 80%:	E: 0.00	dE -4.71	batch_acc 0.9600
+[INFO  11:33:47] 90%:	E: 0.00	dE -4.35	batch_acc 0.9450
+[INFO  11:33:50] epoch: 20 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:33:51] 0%:	E: 0.00	dE -4.61	batch_acc 0.9250
+[INFO  11:33:52] 10%:	E: 0.00	dE -4.38	batch_acc 0.9600
+[INFO  11:33:54] 20%:	E: 0.00	dE -4.98	batch_acc 0.9250
+[INFO  11:33:55] 30%:	E: 0.00	dE -4.77	batch_acc 0.9250
+[INFO  11:33:57] 40%:	E: 0.00	dE -4.17	batch_acc 0.9650
+[INFO  11:33:58] 50%:	E: 0.00	dE -4.93	batch_acc 0.9350
+[INFO  11:33:59] 60%:	E: 0.00	dE -4.40	batch_acc 0.9500
+[INFO  11:34:01] 70%:	E: 0.00	dE -5.53	batch_acc 0.9150
+[INFO  11:34:03] 80%:	E: 0.00	dE -4.24	batch_acc 0.9550
+[INFO  11:34:04] 90%:	E: 0.00	dE -4.34	batch_acc 0.9650
+[INFO  11:34:07] epoch: 21 	 test_acc: 0.8945 	 mean_E: 0.0000
+[INFO  11:34:07] 0%:	E: 0.00	dE -3.61	batch_acc 0.9650
+[INFO  11:34:09] 10%:	E: 0.00	dE -3.85	batch_acc 0.9550
+[INFO  11:34:10] 20%:	E: 0.00	dE -3.30	batch_acc 0.9700
+[INFO  11:34:12] 30%:	E: 0.00	dE -5.23	batch_acc 0.9200
+[INFO  11:34:13] 40%:	E: 0.00	dE -4.85	batch_acc 0.9200
+[INFO  11:34:15] 50%:	E: 0.00	dE -4.28	batch_acc 0.9500
+[INFO  11:34:17] 60%:	E: 0.00	dE -4.88	batch_acc 0.9250
+[INFO  11:34:18] 70%:	E: 0.00	dE -4.09	batch_acc 0.9500
+[INFO  11:34:20] 80%:	E: 0.00	dE -4.20	batch_acc 0.9550
+[INFO  11:34:21] 90%:	E: 0.00	dE -4.35	batch_acc 0.9700
+[INFO  11:34:24] epoch: 22 	 test_acc: 0.8921 	 mean_E: 0.0000
+[INFO  11:34:24] 0%:	E: 0.00	dE -4.49	batch_acc 0.9350
+[INFO  11:34:26] 10%:	E: 0.00	dE -4.45	batch_acc 0.9500
+[INFO  11:34:27] 20%:	E: 0.00	dE -4.04	batch_acc 0.9450
+[INFO  11:34:29] 30%:	E: 0.00	dE -3.56	batch_acc 0.9700
+[INFO  11:34:31] 40%:	E: 0.00	dE -5.77	batch_acc 0.9100
+[INFO  11:34:32] 50%:	E: 0.00	dE -4.09	batch_acc 0.9450
+[INFO  11:34:34] 60%:	E: 0.00	dE -3.65	batch_acc 0.9700
+[INFO  11:34:35] 70%:	E: 0.00	dE -3.98	batch_acc 0.9450
+[INFO  11:34:37] 80%:	E: 0.00	dE -3.62	batch_acc 0.9600
+[INFO  11:34:38] 90%:	E: 0.00	dE -4.76	batch_acc 0.9500
+[INFO  11:34:42] epoch: 23 	 test_acc: 0.8914 	 mean_E: 0.0000
+[INFO  11:34:42] 0%:	E: 0.00	dE -3.62	batch_acc 0.9700
+[INFO  11:34:43] 10%:	E: 0.00	dE -3.84	batch_acc 0.9600
+[INFO  11:34:45] 20%:	E: 0.00	dE -3.98	batch_acc 0.9550
+[INFO  11:34:46] 30%:	E: 0.00	dE -4.64	batch_acc 0.9500
+[INFO  11:34:48] 40%:	E: 0.00	dE -4.30	batch_acc 0.9350
+[INFO  11:34:50] 50%:	E: 0.00	dE -3.42	batch_acc 0.9750
+[INFO  11:34:51] 60%:	E: 0.00	dE -5.22	batch_acc 0.9250
+[INFO  11:34:53] 70%:	E: 0.00	dE -6.06	batch_acc 0.8950
+[INFO  11:34:54] 80%:	E: 0.00	dE -3.94	batch_acc 0.9650
+[INFO  11:34:56] 90%:	E: 0.00	dE -6.18	batch_acc 0.9400
+[INFO  11:34:59] epoch: 24 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:34:59] 0%:	E: 0.00	dE -3.82	batch_acc 0.9600
+[INFO  11:35:01] 10%:	E: 0.00	dE -3.29	batch_acc 0.9700
+[INFO  11:35:02] 20%:	E: 0.00	dE -3.88	batch_acc 0.9700
+[INFO  11:35:04] 30%:	E: 0.00	dE -3.95	batch_acc 0.9550
+[INFO  11:35:05] 40%:	E: 0.00	dE -4.81	batch_acc 0.9400
+[INFO  11:35:07] 50%:	E: 0.00	dE -3.69	batch_acc 0.9650
+[INFO  11:35:09] 60%:	E: 0.00	dE -4.02	batch_acc 0.9550
+[INFO  11:35:10] 70%:	E: 0.00	dE -4.08	batch_acc 0.9500
+[INFO  11:35:12] 80%:	E: 0.00	dE -3.86	batch_acc 0.9400
+[INFO  11:35:13] 90%:	E: 0.00	dE -4.45	batch_acc 0.9550
+[INFO  11:35:16] epoch: 25 	 test_acc: 0.8944 	 mean_E: 0.0000
+[INFO  11:35:16] 0%:	E: 0.00	dE -2.94	batch_acc 0.9850
+[INFO  11:35:18] 10%:	E: 0.00	dE -4.68	batch_acc 0.9300
+[INFO  11:35:19] 20%:	E: 0.00	dE -3.97	batch_acc 0.9500
+[INFO  11:35:21] 30%:	E: 0.00	dE -4.51	batch_acc 0.9400
+[INFO  11:35:23] 40%:	E: 0.00	dE -3.80	batch_acc 0.9500
+[INFO  11:35:24] 50%:	E: 0.00	dE -4.05	batch_acc 0.9600
+[INFO  11:35:26] 60%:	E: 0.00	dE -3.72	batch_acc 0.9550
+[INFO  11:35:27] 70%:	E: 0.00	dE -4.26	batch_acc 0.9500
+[INFO  11:35:29] 80%:	E: 0.00	dE -4.19	batch_acc 0.9550
+[INFO  11:35:30] 90%:	E: 0.00	dE -4.95	batch_acc 0.9200
+[INFO  11:35:33] epoch: 26 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:35:34] 0%:	E: 0.00	dE -3.89	batch_acc 0.9600
+[INFO  11:35:35] 10%:	E: 0.00	dE -4.26	batch_acc 0.9500
+[INFO  11:35:37] 20%:	E: 0.00	dE -5.05	batch_acc 0.9350
+[INFO  11:35:38] 30%:	E: 0.00	dE -4.15	batch_acc 0.9450
+[INFO  11:35:40] 40%:	E: 0.00	dE -3.52	batch_acc 0.9550
+[INFO  11:35:41] 50%:	E: 0.00	dE -4.82	batch_acc 0.9200
+[INFO  11:35:43] 60%:	E: 0.00	dE -4.22	batch_acc 0.9350
+[INFO  11:35:44] 70%:	E: 0.00	dE -3.74	batch_acc 0.9550
+[INFO  11:35:46] 80%:	E: 0.00	dE -3.15	batch_acc 0.9750
+[INFO  11:35:47] 90%:	E: 0.00	dE -4.07	batch_acc 0.9550
+[INFO  11:35:50] epoch: 27 	 test_acc: 0.8908 	 mean_E: 0.0000
+[INFO  11:35:50] 0%:	E: 0.00	dE -3.34	batch_acc 0.9750
+[INFO  11:35:52] 10%:	E: 0.00	dE -3.87	batch_acc 0.9350
+[INFO  11:35:54] 20%:	E: 0.00	dE -4.16	batch_acc 0.9350
+[INFO  11:35:55] 30%:	E: 0.00	dE -3.75	batch_acc 0.9650
+[INFO  11:35:57] 40%:	E: 0.00	dE -3.77	batch_acc 0.9450
+[INFO  11:35:58] 50%:	E: 0.00	dE -3.84	batch_acc 0.9650
+[INFO  11:36:00] 60%:	E: 0.00	dE -3.77	batch_acc 0.9600
+[INFO  11:36:01] 70%:	E: 0.00	dE -5.35	batch_acc 0.9150
+[INFO  11:36:03] 80%:	E: 0.00	dE -4.15	batch_acc 0.9400
+[INFO  11:36:04] 90%:	E: 0.00	dE -4.24	batch_acc 0.9300
+[INFO  11:36:08] epoch: 28 	 test_acc: 0.8948 	 mean_E: 0.0000
+[INFO  11:36:08] 0%:	E: 0.00	dE -4.26	batch_acc 0.9250
+[INFO  11:36:09] 10%:	E: 0.00	dE -3.44	batch_acc 0.9700
+[INFO  11:36:11] 20%:	E: 0.00	dE -4.25	batch_acc 0.9550
+[INFO  11:36:12] 30%:	E: 0.00	dE -3.15	batch_acc 0.9750
+[INFO  11:36:14] 40%:	E: 0.00	dE -4.37	batch_acc 0.9600
+[INFO  11:36:15] 50%:	E: 0.00	dE -4.09	batch_acc 0.9400
+[INFO  11:36:17] 60%:	E: 0.00	dE -4.16	batch_acc 0.9500
+[INFO  11:36:18] 70%:	E: 0.00	dE -3.29	batch_acc 0.9700
+[INFO  11:36:20] 80%:	E: 0.00	dE -3.98	batch_acc 0.9500
+[INFO  11:36:21] 90%:	E: 0.00	dE -3.82	batch_acc 0.9550
+[INFO  11:36:24] epoch: 29 	 test_acc: 0.8923 	 mean_E: 0.0000
+[INFO  11:36:24] 0%:	E: 0.00	dE -4.20	batch_acc 0.9400
+[INFO  11:36:26] 10%:	E: 0.00	dE -4.64	batch_acc 0.9250
+[INFO  11:36:27] 20%:	E: 0.00	dE -3.89	batch_acc 0.9500
+[INFO  11:36:29] 30%:	E: 0.00	dE -3.42	batch_acc 0.9500
+[INFO  11:36:31] 40%:	E: 0.00	dE -3.96	batch_acc 0.9550
+[INFO  11:36:32] 50%:	E: 0.00	dE -3.81	batch_acc 0.9650
+[INFO  11:36:33] 60%:	E: 0.00	dE -3.20	batch_acc 0.9650
+[INFO  11:36:35] 70%:	E: 0.00	dE -3.03	batch_acc 0.9650
+[INFO  11:36:37] 80%:	E: 0.00	dE -3.65	batch_acc 0.9600
+[INFO  11:36:38] 90%:	E: 0.00	dE -3.97	batch_acc 0.9550
+[INFO  11:36:41] epoch: 30 	 test_acc: 0.8930 	 mean_E: 0.0000
+[INFO  11:36:41] 0%:	E: 0.00	dE -3.10	batch_acc 0.9550
+[INFO  11:36:43] 10%:	E: 0.00	dE -3.69	batch_acc 0.9500
+[INFO  11:36:44] 20%:	E: 0.00	dE -4.26	batch_acc 0.9450
+[INFO  11:36:46] 30%:	E: 0.00	dE -3.64	batch_acc 0.9550
+[INFO  11:36:47] 40%:	E: 0.00	dE -3.71	batch_acc 0.9450
+[INFO  11:36:49] 50%:	E: 0.00	dE -3.37	batch_acc 0.9700
+[INFO  11:36:51] 60%:	E: 0.00	dE -3.25	batch_acc 0.9700
+[INFO  11:36:52] 70%:	E: 0.00	dE -4.17	batch_acc 0.9500
+[INFO  11:36:54] 80%:	E: 0.00	dE -4.05	batch_acc 0.9600
+[INFO  11:36:55] 90%:	E: 0.00	dE -3.78	batch_acc 0.9500
+[INFO  11:36:58] epoch: 31 	 test_acc: 0.8948 	 mean_E: 0.0000
+[INFO  11:36:58] 0%:	E: 0.00	dE -4.28	batch_acc 0.9450
+[INFO  11:37:00] 10%:	E: 0.00	dE -3.27	batch_acc 0.9650
+[INFO  11:37:01] 20%:	E: 0.00	dE -3.98	batch_acc 0.9550
+[INFO  11:37:03] 30%:	E: 0.00	dE -3.63	batch_acc 0.9450
+[INFO  11:37:05] 40%:	E: 0.00	dE -4.27	batch_acc 0.9400
+[INFO  11:37:06] 50%:	E: 0.00	dE -4.91	batch_acc 0.9350
+[INFO  11:37:08] 60%:	E: 0.00	dE -3.09	batch_acc 0.9700
+[INFO  11:37:09] 70%:	E: 0.00	dE -3.61	batch_acc 0.9700
+[INFO  11:37:11] 80%:	E: 0.00	dE -3.44	batch_acc 0.9650
+[INFO  11:37:12] 90%:	E: 0.00	dE -4.19	batch_acc 0.9400
+[INFO  11:37:15] epoch: 32 	 test_acc: 0.8948 	 mean_E: 0.0000
+[INFO  11:37:15] 0%:	E: 0.00	dE -3.47	batch_acc 0.9650
+[INFO  11:37:17] 10%:	E: 0.00	dE -3.61	batch_acc 0.9650
+[INFO  11:37:19] 20%:	E: 0.00	dE -3.18	batch_acc 0.9650
+[INFO  11:37:20] 30%:	E: 0.00	dE -3.20	batch_acc 0.9750
+[INFO  11:37:22] 40%:	E: 0.00	dE -3.16	batch_acc 0.9550
+[INFO  11:37:23] 50%:	E: 0.00	dE -3.61	batch_acc 0.9550
+[INFO  11:37:25] 60%:	E: 0.00	dE -3.79	batch_acc 0.9350
+[INFO  11:37:27] 70%:	E: 0.00	dE -3.74	batch_acc 0.9550
+[INFO  11:37:28] 80%:	E: 0.00	dE -3.75	batch_acc 0.9500
+[INFO  11:37:30] 90%:	E: 0.00	dE -3.60	batch_acc 0.9450
+[INFO  11:37:33] epoch: 33 	 test_acc: 0.8945 	 mean_E: 0.0000
+[INFO  11:37:33] 0%:	E: 0.00	dE -3.11	batch_acc 0.9700
+[INFO  11:37:34] 10%:	E: 0.00	dE -3.01	batch_acc 0.9650
+[INFO  11:37:36] 20%:	E: 0.00	dE -3.57	batch_acc 0.9550
+[INFO  11:37:37] 30%:	E: 0.00	dE -2.49	batch_acc 0.9950
+[INFO  11:37:39] 40%:	E: 0.00	dE -3.59	batch_acc 0.9600
+[INFO  11:37:41] 50%:	E: 0.00	dE -3.75	batch_acc 0.9650
+[INFO  11:37:42] 60%:	E: 0.00	dE -3.39	batch_acc 0.9550
+[INFO  11:37:44] 70%:	E: 0.00	dE -3.92	batch_acc 0.9400
+[INFO  11:37:45] 80%:	E: 0.00	dE -3.06	batch_acc 0.9750
+[INFO  11:37:47] 90%:	E: 0.00	dE -3.50	batch_acc 0.9550
+[INFO  11:37:50] epoch: 34 	 test_acc: 0.8953 	 mean_E: 0.0000
+[INFO  11:37:50] 0%:	E: 0.00	dE -4.45	batch_acc 0.9450
+[INFO  11:37:52] 10%:	E: 0.00	dE -3.34	batch_acc 0.9600
+[INFO  11:37:53] 20%:	E: 0.00	dE -3.10	batch_acc 0.9800
+[INFO  11:37:55] 30%:	E: 0.00	dE -3.42	batch_acc 0.9600
+[INFO  11:37:56] 40%:	E: 0.00	dE -2.76	batch_acc 0.9800
+[INFO  11:37:58] 50%:	E: 0.00	dE -3.13	batch_acc 0.9650
+[INFO  11:37:59] 60%:	E: 0.00	dE -3.05	batch_acc 0.9550
+[INFO  11:38:01] 70%:	E: 0.00	dE -4.39	batch_acc 0.9450
+[INFO  11:38:02] 80%:	E: 0.00	dE -3.12	batch_acc 0.9500
+[INFO  11:38:04] 90%:	E: 0.00	dE -3.57	batch_acc 0.9500
+[INFO  11:38:07] epoch: 35 	 test_acc: 0.8956 	 mean_E: 0.0000
+[INFO  11:38:07] 0%:	E: 0.00	dE -3.65	batch_acc 0.9500
+[INFO  11:38:09] 10%:	E: 0.00	dE -3.73	batch_acc 0.9550
+[INFO  11:38:10] 20%:	E: 0.00	dE -3.53	batch_acc 0.9650
+[INFO  11:38:12] 30%:	E: 0.00	dE -3.66	batch_acc 0.9650
+[INFO  11:38:13] 40%:	E: 0.00	dE -3.60	batch_acc 0.9550
+[INFO  11:38:15] 50%:	E: 0.00	dE -3.03	batch_acc 0.9800
+[INFO  11:38:16] 60%:	E: 0.00	dE -2.33	batch_acc 0.9850
+[INFO  11:38:17] 70%:	E: 0.00	dE -3.56	batch_acc 0.9700
+[INFO  11:38:19] 80%:	E: 0.00	dE -3.50	batch_acc 0.9700
+[INFO  11:38:21] 90%:	E: 0.00	dE -3.98	batch_acc 0.9450
+[INFO  11:38:24] epoch: 36 	 test_acc: 0.8991 	 mean_E: 0.0000
+[INFO  11:38:24] 0%:	E: 0.00	dE -2.95	batch_acc 0.9600
+[INFO  11:38:25] 10%:	E: 0.00	dE -3.84	batch_acc 0.9400
+[INFO  11:38:27] 20%:	E: 0.00	dE -2.36	batch_acc 1.0000
+[INFO  11:38:29] 30%:	E: 0.00	dE -3.34	batch_acc 0.9750
+[INFO  11:38:30] 40%:	E: 0.00	dE -3.27	batch_acc 0.9650
+[INFO  11:38:31] 50%:	E: 0.00	dE -3.97	batch_acc 0.9650
+[INFO  11:38:33] 60%:	E: 0.00	dE -2.62	batch_acc 0.9900
+[INFO  11:38:34] 70%:	E: 0.00	dE -3.22	batch_acc 0.9800
+[INFO  11:38:36] 80%:	E: 0.00	dE -2.81	batch_acc 0.9700
+[INFO  11:38:37] 90%:	E: 0.00	dE -3.06	batch_acc 0.9600
+[INFO  11:38:40] epoch: 37 	 test_acc: 0.8959 	 mean_E: 0.0000
+[INFO  11:38:40] 0%:	E: 0.00	dE -2.72	batch_acc 0.9800
+[INFO  11:38:42] 10%:	E: 0.00	dE -3.66	batch_acc 0.9400
+[INFO  11:38:44] 20%:	E: 0.00	dE -3.14	batch_acc 0.9650
+[INFO  11:38:45] 30%:	E: 0.00	dE -3.46	batch_acc 0.9550
+[INFO  11:38:47] 40%:	E: 0.00	dE -3.41	batch_acc 0.9650
+[INFO  11:38:48] 50%:	E: 0.00	dE -3.45	batch_acc 0.9550
+[INFO  11:38:50] 60%:	E: 0.00	dE -3.58	batch_acc 0.9650
+[INFO  11:38:51] 70%:	E: 0.00	dE -3.16	batch_acc 0.9550
+[INFO  11:38:53] 80%:	E: 0.00	dE -2.88	batch_acc 0.9800
+[INFO  11:38:54] 90%:	E: 0.00	dE -2.80	batch_acc 0.9600
+[INFO  11:38:58] epoch: 38 	 test_acc: 0.8924 	 mean_E: 0.0000
+[INFO  11:38:58] 0%:	E: 0.00	dE -2.81	batch_acc 0.9850
+[INFO  11:38:59] 10%:	E: 0.00	dE -3.18	batch_acc 0.9750
+[INFO  11:39:01] 20%:	E: 0.00	dE -3.21	batch_acc 0.9550
+[INFO  11:39:02] 30%:	E: 0.00	dE -4.06	batch_acc 0.9500
+[INFO  11:39:04] 40%:	E: 0.00	dE -4.11	batch_acc 0.9400
+[INFO  11:39:05] 50%:	E: 0.00	dE -3.71	batch_acc 0.9500
+[INFO  11:39:07] 60%:	E: 0.00	dE -2.75	batch_acc 0.9750
+[INFO  11:39:08] 70%:	E: 0.00	dE -3.03	batch_acc 0.9800
+[INFO  11:39:10] 80%:	E: 0.00	dE -2.41	batch_acc 0.9850
+[INFO  11:39:11] 90%:	E: 0.00	dE -2.75	batch_acc 0.9750
+[INFO  11:39:14] epoch: 39 	 test_acc: 0.8935 	 mean_E: 0.0000
+[INFO  11:39:15] 0%:	E: 0.00	dE -2.36	batch_acc 0.9900
+[INFO  11:39:16] 10%:	E: 0.00	dE -3.62	batch_acc 0.9550
+[INFO  11:39:18] 20%:	E: 0.00	dE -3.27	batch_acc 0.9700
+[INFO  11:39:19] 30%:	E: 0.00	dE -3.86	batch_acc 0.9650
+[INFO  11:39:21] 40%:	E: 0.00	dE -3.83	batch_acc 0.9500
+[INFO  11:39:23] 50%:	E: 0.00	dE -2.81	batch_acc 0.9700
+[INFO  11:39:24] 60%:	E: 0.00	dE -2.60	batch_acc 0.9750
+[INFO  11:39:26] 70%:	E: 0.00	dE -3.65	batch_acc 0.9550
+[INFO  11:39:27] 80%:	E: 0.00	dE -2.84	batch_acc 0.9800
+[INFO  11:39:29] 90%:	E: 0.00	dE -3.95	batch_acc 0.9550
+[INFO  11:39:32] epoch: 40 	 test_acc: 0.8954 	 mean_E: 0.0000
+[INFO  11:39:32] 0%:	E: 0.00	dE -2.80	batch_acc 0.9650
+[INFO  11:39:34] 10%:	E: 0.00	dE -3.08	batch_acc 0.9650
+[INFO  11:39:35] 20%:	E: 0.00	dE -2.29	batch_acc 0.9900
+[INFO  11:39:37] 30%:	E: 0.00	dE -4.33	batch_acc 0.9450
+[INFO  11:39:38] 40%:	E: 0.00	dE -3.37	batch_acc 0.9700
+[INFO  11:39:40] 50%:	E: 0.00	dE -4.69	batch_acc 0.9500
+[INFO  11:39:41] 60%:	E: 0.00	dE -2.81	batch_acc 0.9750
+[INFO  11:39:43] 70%:	E: 0.00	dE -4.08	batch_acc 0.9550
+[INFO  11:39:45] 80%:	E: 0.00	dE -2.39	batch_acc 0.9950
+[INFO  11:39:46] 90%:	E: 0.00	dE -2.72	batch_acc 0.9750
+[INFO  11:39:49] epoch: 41 	 test_acc: 0.8931 	 mean_E: 0.0000
+[INFO  11:39:49] 0%:	E: 0.00	dE -2.84	batch_acc 0.9800
+[INFO  11:39:51] 10%:	E: 0.00	dE -2.65	batch_acc 0.9800
+[INFO  11:39:52] 20%:	E: 0.00	dE -2.74	batch_acc 0.9550
+[INFO  11:39:54] 30%:	E: 0.00	dE -3.01	batch_acc 0.9650
+[INFO  11:39:55] 40%:	E: 0.00	dE -3.19	batch_acc 0.9450
+[INFO  11:39:57] 50%:	E: 0.00	dE -2.95	batch_acc 0.9650
+[INFO  11:39:58] 60%:	E: 0.00	dE -3.20	batch_acc 0.9700
+[INFO  11:40:00] 70%:	E: 0.00	dE -3.60	batch_acc 0.9500
+[INFO  11:40:01] 80%:	E: 0.00	dE -3.37	batch_acc 0.9600
+[INFO  11:40:03] 90%:	E: 0.00	dE -3.94	batch_acc 0.9650
+[INFO  11:40:06] epoch: 42 	 test_acc: 0.8956 	 mean_E: 0.0000
+[INFO  11:40:06] 0%:	E: 0.00	dE -2.87	batch_acc 0.9650
+[INFO  11:40:07] 10%:	E: 0.00	dE -3.28	batch_acc 0.9800
+[INFO  11:40:09] 20%:	E: 0.00	dE -2.88	batch_acc 0.9700
+[INFO  11:40:11] 30%:	E: 0.00	dE -3.85	batch_acc 0.9600
+[INFO  11:40:12] 40%:	E: 0.00	dE -3.12	batch_acc 0.9500
+[INFO  11:40:14] 50%:	E: 0.00	dE -3.14	batch_acc 0.9650
+[INFO  11:40:15] 60%:	E: 0.00	dE -4.09	batch_acc 0.9700
+[INFO  11:40:17] 70%:	E: 0.00	dE -3.04	batch_acc 0.9750
+[INFO  11:40:18] 80%:	E: 0.00	dE -3.06	batch_acc 0.9800
+[INFO  11:40:20] 90%:	E: 0.00	dE -3.10	batch_acc 0.9700
+[INFO  11:40:23] epoch: 43 	 test_acc: 0.8943 	 mean_E: 0.0000
+[INFO  11:40:23] 0%:	E: 0.00	dE -2.96	batch_acc 0.9650
+[INFO  11:40:25] 10%:	E: 0.00	dE -3.50	batch_acc 0.9650
+[INFO  11:40:26] 20%:	E: 0.00	dE -2.52	batch_acc 0.9850
+[INFO  11:40:28] 30%:	E: 0.00	dE -2.85	batch_acc 0.9800
+[INFO  11:40:29] 40%:	E: 0.00	dE -2.46	batch_acc 0.9800
+[INFO  11:40:31] 50%:	E: 0.00	dE -3.73	batch_acc 0.9550
+[INFO  11:40:32] 60%:	E: 0.00	dE -3.79	batch_acc 0.9700
+[INFO  11:40:34] 70%:	E: 0.00	dE -3.78	batch_acc 0.9550
+[INFO  11:40:35] 80%:	E: 0.00	dE -3.06	batch_acc 0.9650
+[INFO  11:40:37] 90%:	E: 0.00	dE -3.62	batch_acc 0.9450
+[INFO  11:40:40] epoch: 44 	 test_acc: 0.8947 	 mean_E: 0.0000
+[INFO  11:40:40] 0%:	E: 0.00	dE -2.90	batch_acc 0.9700
+[INFO  11:40:42] 10%:	E: 0.00	dE -2.57	batch_acc 0.9800
+[INFO  11:40:43] 20%:	E: 0.00	dE -3.24	batch_acc 0.9500
+[INFO  11:40:45] 30%:	E: 0.00	dE -3.37	batch_acc 0.9600
+[INFO  11:40:46] 40%:	E: 0.00	dE -3.27	batch_acc 0.9700
+[INFO  11:40:48] 50%:	E: 0.00	dE -2.62	batch_acc 0.9750
+[INFO  11:40:49] 60%:	E: 0.00	dE -3.24	batch_acc 0.9600
+[INFO  11:40:51] 70%:	E: 0.00	dE -3.51	batch_acc 0.9700
+[INFO  11:40:52] 80%:	E: 0.00	dE -3.43	batch_acc 0.9600
+[INFO  11:40:54] 90%:	E: 0.00	dE -3.26	batch_acc 0.9700
+[INFO  11:40:57] epoch: 45 	 test_acc: 0.8947 	 mean_E: 0.0000
+[INFO  11:40:57] 0%:	E: 0.00	dE -3.03	batch_acc 0.9650
+[INFO  11:40:59] 10%:	E: 0.00	dE -2.44	batch_acc 0.9850
+[INFO  11:41:00] 20%:	E: 0.00	dE -3.11	batch_acc 0.9750
+[INFO  11:41:01] 30%:	E: 0.00	dE -3.65	batch_acc 0.9550
+[INFO  11:41:03] 40%:	E: 0.00	dE -3.29	batch_acc 0.9650
+[INFO  11:41:05] 50%:	E: 0.00	dE -2.93	batch_acc 0.9850
+[INFO  11:41:06] 60%:	E: 0.00	dE -3.90	batch_acc 0.9550
+[INFO  11:41:08] 70%:	E: 0.00	dE -2.90	batch_acc 0.9700
+[INFO  11:41:09] 80%:	E: 0.00	dE -3.67	batch_acc 0.9450
+[INFO  11:41:11] 90%:	E: 0.00	dE -3.40	batch_acc 0.9650
+[INFO  11:41:14] epoch: 46 	 test_acc: 0.8940 	 mean_E: 0.0000
+[INFO  11:41:14] 0%:	E: 0.00	dE -3.28	batch_acc 0.9550
+[INFO  11:41:15] 10%:	E: 0.00	dE -2.01	batch_acc 0.9850
+[INFO  11:41:17] 20%:	E: 0.00	dE -2.76	batch_acc 0.9750
+[INFO  11:41:19] 30%:	E: 0.00	dE -3.79	batch_acc 0.9550
+[INFO  11:41:20] 40%:	E: 0.00	dE -3.29	batch_acc 0.9550
+[INFO  11:41:22] 50%:	E: 0.00	dE -2.85	batch_acc 0.9650
+[INFO  11:41:23] 60%:	E: 0.00	dE -2.88	batch_acc 0.9700
+[INFO  11:41:25] 70%:	E: 0.00	dE -3.32	batch_acc 0.9550
+[INFO  11:41:26] 80%:	E: 0.00	dE -3.39	batch_acc 0.9700
+[INFO  11:41:28] 90%:	E: 0.00	dE -2.62	batch_acc 0.9650
+[INFO  11:41:31] epoch: 47 	 test_acc: 0.8974 	 mean_E: 0.0000
+[INFO  11:41:31] 0%:	E: 0.00	dE -2.27	batch_acc 0.9800
+[INFO  11:41:33] 10%:	E: 0.00	dE -2.75	batch_acc 0.9800
+[INFO  11:41:34] 20%:	E: 0.00	dE -2.65	batch_acc 0.9850
+[INFO  11:41:36] 30%:	E: 0.00	dE -3.25	batch_acc 0.9600
+[INFO  11:41:37] 40%:	E: 0.00	dE -2.50	batch_acc 0.9850
+[INFO  11:41:39] 50%:	E: 0.00	dE -3.21	batch_acc 0.9700
+[INFO  11:41:41] 60%:	E: 0.00	dE -3.62	batch_acc 0.9550
+[INFO  11:41:42] 70%:	E: 0.00	dE -3.05	batch_acc 0.9800
+[INFO  11:41:44] 80%:	E: 0.00	dE -3.26	batch_acc 0.9800
+[INFO  11:41:45] 90%:	E: 0.00	dE -3.54	batch_acc 0.9700
+[INFO  11:41:48] epoch: 48 	 test_acc: 0.8934 	 mean_E: 0.0000
+[INFO  11:41:49] 0%:	E: 0.00	dE -3.03	batch_acc 0.9700
+[INFO  11:41:50] 10%:	E: 0.00	dE -2.56	batch_acc 0.9850
+[INFO  11:41:52] 20%:	E: 0.00	dE -3.01	batch_acc 0.9650
+[INFO  11:41:53] 30%:	E: 0.00	dE -2.81	batch_acc 0.9750
+[INFO  11:41:55] 40%:	E: 0.00	dE -2.84	batch_acc 0.9750
+[INFO  11:41:56] 50%:	E: 0.00	dE -3.16	batch_acc 0.9650
+[INFO  11:41:58] 60%:	E: 0.00	dE -4.22	batch_acc 0.9500
+[INFO  11:41:59] 70%:	E: 0.00	dE -2.97	batch_acc 0.9850
+[INFO  11:42:01] 80%:	E: 0.00	dE -2.53	batch_acc 0.9750
+[INFO  11:42:03] 90%:	E: 0.00	dE -3.47	batch_acc 0.9650
+[INFO  11:42:06] epoch: 49 	 test_acc: 0.8953 	 mean_E: 0.0000
+[INFO  11:42:06] 0%:	E: 0.00	dE -2.26	batch_acc 0.9950
+[INFO  11:42:07] 10%:	E: 0.00	dE -2.45	batch_acc 0.9800
+[INFO  11:42:09] 20%:	E: 0.00	dE -2.65	batch_acc 0.9850
+[INFO  11:42:10] 30%:	E: 0.00	dE -2.32	batch_acc 0.9750
+[INFO  11:42:12] 40%:	E: 0.00	dE -2.58	batch_acc 0.9700
+[INFO  11:42:14] 50%:	E: 0.00	dE -1.98	batch_acc 0.9900
+[INFO  11:42:15] 60%:	E: 0.00	dE -2.88	batch_acc 0.9650
+[INFO  11:42:17] 70%:	E: 0.00	dE -3.87	batch_acc 0.9450
+[INFO  11:42:19] 80%:	E: 0.00	dE -2.96	batch_acc 0.9700
+[INFO  11:42:20] 90%:	E: 0.00	dE -2.55	batch_acc 0.9800
+[INFO  11:42:23] epoch: 50 	 test_acc: 0.8956 	 mean_E: 0.0000
+[INFO  11:42:23] 0%:	E: 0.00	dE -2.05	batch_acc 0.9900
+[INFO  11:42:25] 10%:	E: 0.00	dE -4.11	batch_acc 0.9600
+[INFO  11:42:26] 20%:	E: 0.00	dE -2.32	batch_acc 0.9900
+[INFO  11:42:28] 30%:	E: 0.00	dE -2.64	batch_acc 0.9800
+[INFO  11:42:30] 40%:	E: 0.00	dE -3.18	batch_acc 0.9650
+[INFO  11:42:31] 50%:	E: 0.00	dE -2.83	batch_acc 0.9700
+[INFO  11:42:33] 60%:	E: 0.00	dE -3.03	batch_acc 0.9600
+[INFO  11:42:34] 70%:	E: 0.00	dE -2.43	batch_acc 0.9750
+[INFO  11:42:36] 80%:	E: 0.00	dE -2.74	batch_acc 0.9700
+[INFO  11:42:38] 90%:	E: 0.00	dE -2.85	batch_acc 0.9700
+[INFO  11:42:41] epoch: 51 	 test_acc: 0.8956 	 mean_E: 0.0000
+[INFO  11:42:41] 0%:	E: 0.00	dE -3.17	batch_acc 0.9750
+[INFO  11:42:42] 10%:	E: 0.00	dE -2.48	batch_acc 0.9900
+[INFO  11:42:44] 20%:	E: 0.00	dE -3.03	batch_acc 0.9600
+[INFO  11:42:45] 30%:	E: 0.00	dE -2.87	batch_acc 0.9700
+[INFO  11:42:47] 40%:	E: 0.00	dE -3.97	batch_acc 0.9450
+[INFO  11:42:48] 50%:	E: 0.00	dE -2.56	batch_acc 0.9750
+[INFO  11:42:50] 60%:	E: 0.00	dE -2.16	batch_acc 0.9850
+[INFO  11:42:51] 70%:	E: 0.00	dE -4.43	batch_acc 0.9300
+[INFO  11:42:53] 80%:	E: 0.00	dE -3.75	batch_acc 0.9650
+[INFO  11:42:54] 90%:	E: 0.00	dE -3.14	batch_acc 0.9600
+[INFO  11:42:57] epoch: 52 	 test_acc: 0.8957 	 mean_E: 0.0000
+[INFO  11:42:57] 0%:	E: 0.00	dE -2.64	batch_acc 0.9750
+[INFO  11:42:59] 10%:	E: 0.00	dE -2.25	batch_acc 0.9850
+[INFO  11:43:01] 20%:	E: 0.00	dE -2.95	batch_acc 0.9800
+[INFO  11:43:02] 30%:	E: 0.00	dE -2.62	batch_acc 0.9750
+[INFO  11:43:04] 40%:	E: 0.00	dE -2.95	batch_acc 0.9650
+[INFO  11:43:05] 50%:	E: 0.00	dE -2.54	batch_acc 0.9800
+[INFO  11:43:07] 60%:	E: 0.00	dE -2.03	batch_acc 0.9900
+[INFO  11:43:08] 70%:	E: 0.00	dE -2.72	batch_acc 0.9800
+[INFO  11:43:10] 80%:	E: 0.00	dE -2.04	batch_acc 0.9900
+[INFO  11:43:11] 90%:	E: 0.00	dE -2.88	batch_acc 0.9800
+[INFO  11:43:15] epoch: 53 	 test_acc: 0.8954 	 mean_E: 0.0000
+[INFO  11:43:15] 0%:	E: 0.00	dE -2.98	batch_acc 0.9650
+[INFO  11:43:16] 10%:	E: 0.00	dE -2.65	batch_acc 0.9900
+[INFO  11:43:18] 20%:	E: 0.00	dE -2.60	batch_acc 0.9800
+[INFO  11:43:19] 30%:	E: 0.00	dE -2.94	batch_acc 0.9800
+[INFO  11:43:21] 40%:	E: 0.00	dE -2.14	batch_acc 0.9850
+[INFO  11:43:23] 50%:	E: 0.00	dE -2.57	batch_acc 0.9800
+[INFO  11:43:24] 60%:	E: 0.00	dE -2.36	batch_acc 0.9750
+[INFO  11:43:26] 70%:	E: 0.00	dE -2.45	batch_acc 0.9700
+[INFO  11:43:27] 80%:	E: 0.00	dE -2.51	batch_acc 0.9900
+[INFO  11:43:29] 90%:	E: 0.00	dE -3.47	batch_acc 0.9650
+[INFO  11:43:32] epoch: 54 	 test_acc: 0.8930 	 mean_E: 0.0000
+[INFO  11:43:32] 0%:	E: 0.00	dE -2.48	batch_acc 0.9900
+[INFO  11:43:34] 10%:	E: 0.00	dE -3.18	batch_acc 0.9600
+[INFO  11:43:35] 20%:	E: 0.00	dE -2.61	batch_acc 0.9750
+[INFO  11:43:37] 30%:	E: 0.00	dE -2.89	batch_acc 0.9700
+[INFO  11:43:38] 40%:	E: 0.00	dE -2.95	batch_acc 0.9600
+[INFO  11:43:40] 50%:	E: 0.00	dE -2.54	batch_acc 0.9850
+[INFO  11:43:41] 60%:	E: 0.00	dE -2.24	batch_acc 0.9850
+[INFO  11:43:43] 70%:	E: 0.00	dE -2.81	batch_acc 0.9850
+[INFO  11:43:45] 80%:	E: 0.00	dE -2.49	batch_acc 0.9800
+[INFO  11:43:46] 90%:	E: 0.00	dE -2.72	batch_acc 0.9750
+[INFO  11:43:49] epoch: 55 	 test_acc: 0.8921 	 mean_E: 0.0000
+[INFO  11:43:49] 0%:	E: 0.00	dE -2.59	batch_acc 0.9700
+[INFO  11:43:51] 10%:	E: 0.00	dE -2.34	batch_acc 0.9900
+[INFO  11:43:52] 20%:	E: 0.00	dE -2.44	batch_acc 0.9750
+[INFO  11:43:54] 30%:	E: 0.00	dE -3.10	batch_acc 0.9650
+[INFO  11:43:56] 40%:	E: 0.00	dE -2.37	batch_acc 0.9750
+[INFO  11:43:57] 50%:	E: 0.00	dE -2.60	batch_acc 0.9750
+[INFO  11:43:59] 60%:	E: 0.00	dE -2.29	batch_acc 0.9750
+[INFO  11:44:00] 70%:	E: 0.00	dE -2.07	batch_acc 0.9900
+[INFO  11:44:02] 80%:	E: 0.00	dE -2.46	batch_acc 0.9750
+[INFO  11:44:03] 90%:	E: 0.00	dE -2.85	batch_acc 0.9750
+[INFO  11:44:07] epoch: 56 	 test_acc: 0.8925 	 mean_E: 0.0000
+[INFO  11:44:07] 0%:	E: 0.00	dE -2.78	batch_acc 0.9700
+[INFO  11:44:08] 10%:	E: 0.00	dE -2.43	batch_acc 0.9900
+[INFO  11:44:10] 20%:	E: 0.00	dE -2.76	batch_acc 0.9750
+[INFO  11:44:11] 30%:	E: 0.00	dE -2.93	batch_acc 0.9800
+[INFO  11:44:13] 40%:	E: 0.00	dE -3.21	batch_acc 0.9600
+[INFO  11:44:14] 50%:	E: 0.00	dE -2.33	batch_acc 0.9850
+[INFO  11:44:16] 60%:	E: 0.00	dE -2.63	batch_acc 0.9900
+[INFO  11:44:17] 70%:	E: 0.00	dE -2.41	batch_acc 0.9900
+[INFO  11:44:19] 80%:	E: 0.00	dE -3.26	batch_acc 0.9450
+[INFO  11:44:20] 90%:	E: 0.00	dE -2.89	batch_acc 0.9600
+[INFO  11:44:23] epoch: 57 	 test_acc: 0.8934 	 mean_E: 0.0000
+[INFO  11:44:23] 0%:	E: 0.00	dE -1.83	batch_acc 1.0000
+[INFO  11:44:25] 10%:	E: 0.00	dE -2.81	batch_acc 0.9650
+[INFO  11:44:26] 20%:	E: 0.00	dE -2.50	batch_acc 0.9850
+[INFO  11:44:28] 30%:	E: 0.00	dE -2.52	batch_acc 0.9750
+[INFO  11:44:30] 40%:	E: 0.00	dE -3.15	batch_acc 0.9650
+[INFO  11:44:31] 50%:	E: 0.00	dE -2.87	batch_acc 0.9700
+[INFO  11:44:33] 60%:	E: 0.00	dE -2.51	batch_acc 0.9700
+[INFO  11:44:34] 70%:	E: 0.00	dE -2.25	batch_acc 0.9900
+[INFO  11:44:36] 80%:	E: 0.00	dE -2.75	batch_acc 0.9700
+[INFO  11:44:38] 90%:	E: 0.00	dE -3.48	batch_acc 0.9500
+[INFO  11:44:41] epoch: 58 	 test_acc: 0.8915 	 mean_E: 0.0000
+[INFO  11:44:41] 0%:	E: 0.00	dE -2.67	batch_acc 0.9750
+[INFO  11:44:42] 10%:	E: 0.00	dE -2.86	batch_acc 0.9750
+[INFO  11:44:44] 20%:	E: 0.00	dE -3.48	batch_acc 0.9550
+[INFO  11:44:45] 30%:	E: 0.00	dE -1.99	batch_acc 0.9850
+[INFO  11:44:47] 40%:	E: 0.00	dE -2.80	batch_acc 0.9750
+[INFO  11:44:48] 50%:	E: 0.00	dE -2.86	batch_acc 0.9750
+[INFO  11:44:50] 60%:	E: 0.00	dE -3.38	batch_acc 0.9700
+[INFO  11:44:51] 70%:	E: 0.00	dE -2.49	batch_acc 0.9800
+[INFO  11:44:53] 80%:	E: 0.00	dE -2.60	batch_acc 0.9650
+[INFO  11:44:54] 90%:	E: 0.00	dE -3.10	batch_acc 0.9450
+[INFO  11:44:57] epoch: 59 	 test_acc: 0.8892 	 mean_E: 0.0000
+[INFO  11:44:58] 0%:	E: 0.00	dE -3.02	batch_acc 0.9750
+[INFO  11:44:59] 10%:	E: 0.00	dE -2.41	batch_acc 0.9800
+[INFO  11:45:01] 20%:	E: 0.00	dE -3.40	batch_acc 0.9550
+[INFO  11:45:02] 30%:	E: 0.00	dE -1.92	batch_acc 0.9850
+[INFO  11:45:04] 40%:	E: 0.00	dE -3.99	batch_acc 0.9350
+[INFO  11:45:05] 50%:	E: 0.00	dE -2.04	batch_acc 0.9850
+[INFO  11:45:07] 60%:	E: 0.00	dE -2.56	batch_acc 0.9850
+[INFO  11:45:08] 70%:	E: 0.00	dE -2.16	batch_acc 0.9900
+[INFO  11:45:10] 80%:	E: 0.00	dE -2.73	batch_acc 0.9700
+[INFO  11:45:12] 90%:	E: 0.00	dE -1.99	batch_acc 0.9800
+[INFO  11:45:14] epoch: 60 	 test_acc: 0.8915 	 mean_E: 0.0000
+[INFO  11:45:15] 0%:	E: 0.00	dE -2.66	batch_acc 0.9750
+[INFO  11:45:16] 10%:	E: 0.00	dE -2.28	batch_acc 0.9800
+[INFO  11:45:18] 20%:	E: 0.00	dE -3.08	batch_acc 0.9800
+[INFO  11:45:19] 30%:	E: 0.00	dE -2.68	batch_acc 0.9750
+[INFO  11:45:21] 40%:	E: 0.00	dE -2.29	batch_acc 0.9800
+[INFO  11:45:22] 50%:	E: 0.00	dE -2.64	batch_acc 0.9750
+[INFO  11:45:24] 60%:	E: 0.00	dE -2.43	batch_acc 0.9800
+[INFO  11:45:25] 70%:	E: 0.00	dE -2.19	batch_acc 0.9950
+[INFO  11:45:27] 80%:	E: 0.00	dE -2.54	batch_acc 0.9900
+[INFO  11:45:28] 90%:	E: 0.00	dE -2.22	batch_acc 0.9900
+[INFO  11:45:32] epoch: 61 	 test_acc: 0.8943 	 mean_E: 0.0000
+[INFO  11:45:32] 0%:	E: 0.00	dE -2.12	batch_acc 0.9900
+[INFO  11:45:33] 10%:	E: 0.00	dE -2.59	batch_acc 0.9700
+[INFO  11:45:35] 20%:	E: 0.00	dE -2.20	batch_acc 0.9800
+[INFO  11:45:37] 30%:	E: 0.00	dE -2.14	batch_acc 0.9850
+[INFO  11:45:38] 40%:	E: 0.00	dE -3.22	batch_acc 0.9600
+[INFO  11:45:40] 50%:	E: 0.00	dE -2.16	batch_acc 0.9800
+[INFO  11:45:41] 60%:	E: 0.00	dE -2.43	batch_acc 0.9700
+[INFO  11:45:43] 70%:	E: 0.00	dE -2.91	batch_acc 0.9650
+[INFO  11:45:44] 80%:	E: 0.00	dE -2.54	batch_acc 0.9850
+[INFO  11:45:46] 90%:	E: 0.00	dE -2.18	batch_acc 0.9750
+[INFO  11:45:49] epoch: 62 	 test_acc: 0.8932 	 mean_E: 0.0000
+[INFO  11:45:49] 0%:	E: 0.00	dE -2.44	batch_acc 0.9750
+[INFO  11:45:51] 10%:	E: 0.00	dE -2.79	batch_acc 0.9750
+[INFO  11:45:52] 20%:	E: 0.00	dE -2.73	batch_acc 0.9800
+[INFO  11:45:54] 30%:	E: 0.00	dE -2.23	batch_acc 0.9900
+[INFO  11:45:55] 40%:	E: 0.00	dE -1.99	batch_acc 0.9850
+[INFO  11:45:57] 50%:	E: 0.00	dE -2.65	batch_acc 0.9750
+[INFO  11:45:58] 60%:	E: 0.00	dE -2.03	batch_acc 0.9900
+[INFO  11:46:00] 70%:	E: 0.00	dE -2.13	batch_acc 1.0000
+[INFO  11:46:02] 80%:	E: 0.00	dE -2.29	batch_acc 0.9750
+[INFO  11:46:03] 90%:	E: 0.00	dE -2.72	batch_acc 0.9800
+[INFO  11:46:06] epoch: 63 	 test_acc: 0.8937 	 mean_E: 0.0000
+[INFO  11:46:06] 0%:	E: 0.00	dE -1.88	batch_acc 0.9850
+[INFO  11:46:08] 10%:	E: 0.00	dE -1.93	batch_acc 0.9950
+[INFO  11:46:09] 20%:	E: 0.00	dE -2.16	batch_acc 0.9900
+[INFO  11:46:11] 30%:	E: 0.00	dE -2.48	batch_acc 0.9850
+[INFO  11:46:12] 40%:	E: 0.00	dE -2.67	batch_acc 0.9700
+[INFO  11:46:14] 50%:	E: 0.00	dE -2.70	batch_acc 0.9800
+[INFO  11:46:16] 60%:	E: 0.00	dE -2.54	batch_acc 0.9650
+[INFO  11:46:17] 70%:	E: 0.00	dE -2.74	batch_acc 0.9850
+[INFO  11:46:19] 80%:	E: 0.00	dE -2.55	batch_acc 0.9750
+[INFO  11:46:20] 90%:	E: 0.00	dE -2.87	batch_acc 0.9700
+[INFO  11:46:23] epoch: 64 	 test_acc: 0.8927 	 mean_E: 0.0000
+[INFO  11:46:23] 0%:	E: 0.00	dE -2.77	batch_acc 0.9800
+[INFO  11:46:25] 10%:	E: 0.00	dE -3.44	batch_acc 0.9600
+[INFO  11:46:26] 20%:	E: 0.00	dE -2.69	batch_acc 0.9750
+[INFO  11:46:28] 30%:	E: 0.00	dE -2.51	batch_acc 0.9750
+[INFO  11:46:29] 40%:	E: 0.00	dE -2.34	batch_acc 0.9800
+[INFO  11:46:31] 50%:	E: 0.00	dE -2.61	batch_acc 0.9800
+[INFO  11:46:32] 60%:	E: 0.00	dE -2.58	batch_acc 0.9800
+[INFO  11:46:34] 70%:	E: 0.00	dE -2.39	batch_acc 0.9750
+[INFO  11:46:36] 80%:	E: 0.00	dE -2.59	batch_acc 0.9800
+[INFO  11:46:37] 90%:	E: 0.00	dE -2.86	batch_acc 0.9700
+[INFO  11:46:40] epoch: 65 	 test_acc: 0.8908 	 mean_E: 0.0000
+[INFO  11:46:40] 0%:	E: 0.00	dE -2.69	batch_acc 0.9700
+[INFO  11:46:42] 10%:	E: 0.00	dE -2.51	batch_acc 0.9800
+[INFO  11:46:43] 20%:	E: 0.00	dE -2.61	batch_acc 0.9700
+[INFO  11:46:45] 30%:	E: 0.00	dE -2.16	batch_acc 0.9850
+[INFO  11:46:47] 40%:	E: 0.00	dE -3.07	batch_acc 0.9600
+[INFO  11:46:48] 50%:	E: 0.00	dE -2.13	batch_acc 0.9850
+[INFO  11:46:50] 60%:	E: 0.00	dE -2.20	batch_acc 0.9800
+[INFO  11:46:51] 70%:	E: 0.00	dE -3.10	batch_acc 0.9700
+[INFO  11:46:53] 80%:	E: 0.00	dE -2.59	batch_acc 0.9750
+[INFO  11:46:55] 90%:	E: 0.00	dE -2.05	batch_acc 0.9900
+[INFO  11:46:57] epoch: 66 	 test_acc: 0.8961 	 mean_E: 0.0000
+[INFO  11:46:58] 0%:	E: 0.00	dE -1.80	batch_acc 0.9900
+[INFO  11:46:59] 10%:	E: 0.00	dE -2.34	batch_acc 0.9800
+[INFO  11:47:01] 20%:	E: 0.00	dE -1.70	batch_acc 1.0000
+[INFO  11:47:02] 30%:	E: 0.00	dE -3.79	batch_acc 0.9550
+[INFO  11:47:04] 40%:	E: 0.00	dE -1.90	batch_acc 1.0000
+[INFO  11:47:05] 50%:	E: 0.00	dE -2.89	batch_acc 0.9750
+[INFO  11:47:07] 60%:	E: 0.00	dE -2.40	batch_acc 0.9850
+[INFO  11:47:08] 70%:	E: 0.00	dE -2.60	batch_acc 0.9750
+[INFO  11:47:10] 80%:	E: 0.00	dE -1.96	batch_acc 0.9900
+[INFO  11:47:11] 90%:	E: 0.00	dE -1.97	batch_acc 0.9900
+[INFO  11:47:14] epoch: 67 	 test_acc: 0.8940 	 mean_E: 0.0000
+[INFO  11:47:15] 0%:	E: 0.00	dE -2.66	batch_acc 0.9650
+[INFO  11:47:16] 10%:	E: 0.00	dE -2.65	batch_acc 0.9750
+[INFO  11:47:18] 20%:	E: 0.00	dE -2.74	batch_acc 0.9750
+[INFO  11:47:19] 30%:	E: 0.00	dE -3.17	batch_acc 0.9700
+[INFO  11:47:21] 40%:	E: 0.00	dE -1.88	batch_acc 0.9900
+[INFO  11:47:22] 50%:	E: 0.00	dE -1.84	batch_acc 0.9950
+[INFO  11:47:24] 60%:	E: 0.00	dE -2.16	batch_acc 0.9900
+[INFO  11:47:26] 70%:	E: 0.00	dE -2.73	batch_acc 0.9950
+[INFO  11:47:27] 80%:	E: 0.00	dE -1.99	batch_acc 0.9850
+[INFO  11:47:29] 90%:	E: 0.00	dE -2.67	batch_acc 0.9850
+[INFO  11:47:32] epoch: 68 	 test_acc: 0.8948 	 mean_E: 0.0000
+[INFO  11:47:32] 0%:	E: 0.00	dE -2.06	batch_acc 0.9850
+[INFO  11:47:33] 10%:	E: 0.00	dE -2.08	batch_acc 0.9850
+[INFO  11:47:35] 20%:	E: 0.00	dE -1.86	batch_acc 0.9900
+[INFO  11:47:37] 30%:	E: 0.00	dE -1.95	batch_acc 0.9850
+[INFO  11:47:38] 40%:	E: 0.00	dE -2.53	batch_acc 0.9800
+[INFO  11:47:40] 50%:	E: 0.00	dE -2.41	batch_acc 0.9850
+[INFO  11:47:41] 60%:	E: 0.00	dE -2.39	batch_acc 0.9750
+[INFO  11:47:43] 70%:	E: 0.00	dE -2.12	batch_acc 0.9900
+[INFO  11:47:44] 80%:	E: 0.00	dE -2.31	batch_acc 0.9850
+[INFO  11:47:46] 90%:	E: 0.00	dE -2.31	batch_acc 0.9800
+[INFO  11:47:49] epoch: 69 	 test_acc: 0.8913 	 mean_E: 0.0000
+[INFO  11:47:49] 0%:	E: 0.00	dE -2.15	batch_acc 0.9800
+[INFO  11:47:50] 10%:	E: 0.00	dE -2.40	batch_acc 0.9750
+[INFO  11:47:52] 20%:	E: 0.00	dE -2.12	batch_acc 0.9800
+[INFO  11:47:53] 30%:	E: 0.00	dE -1.84	batch_acc 0.9900
+[INFO  11:47:55] 40%:	E: 0.00	dE -2.58	batch_acc 0.9750
+[INFO  11:47:56] 50%:	E: 0.00	dE -2.25	batch_acc 0.9800
+[INFO  11:47:58] 60%:	E: 0.00	dE -2.23	batch_acc 0.9750
+[INFO  11:47:59] 70%:	E: 0.00	dE -2.59	batch_acc 0.9750
+[INFO  11:48:01] 80%:	E: 0.00	dE -3.04	batch_acc 0.9700
+[INFO  11:48:03] 90%:	E: 0.00	dE -1.96	batch_acc 0.9800
+[INFO  11:48:06] epoch: 70 	 test_acc: 0.8915 	 mean_E: 0.0000
+[INFO  11:48:06] 0%:	E: 0.00	dE -2.82	batch_acc 0.9800
+[INFO  11:48:08] 10%:	E: 0.00	dE -2.04	batch_acc 0.9900
+[INFO  11:48:09] 20%:	E: 0.00	dE -2.25	batch_acc 0.9900
+[INFO  11:48:11] 30%:	E: 0.00	dE -1.92	batch_acc 0.9900
+[INFO  11:48:12] 40%:	E: 0.00	dE -2.34	batch_acc 0.9750
+[INFO  11:48:14] 50%:	E: 0.00	dE -1.94	batch_acc 0.9850
+[INFO  11:48:15] 60%:	E: 0.00	dE -1.79	batch_acc 0.9850
+[INFO  11:48:17] 70%:	E: 0.00	dE -1.77	batch_acc 0.9900
+[INFO  11:48:18] 80%:	E: 0.00	dE -2.85	batch_acc 0.9700
+[INFO  11:48:20] 90%:	E: 0.00	dE -3.05	batch_acc 0.9700
+[INFO  11:48:23] epoch: 71 	 test_acc: 0.8916 	 mean_E: 0.0000
+[INFO  11:48:23] 0%:	E: 0.00	dE -2.36	batch_acc 0.9750
+[INFO  11:48:24] 10%:	E: 0.00	dE -1.92	batch_acc 0.9950
+[INFO  11:48:26] 20%:	E: 0.00	dE -2.11	batch_acc 0.9900
+[INFO  11:48:27] 30%:	E: 0.00	dE -2.84	batch_acc 0.9800
+[INFO  11:48:29] 40%:	E: 0.00	dE -2.57	batch_acc 0.9800
+[INFO  11:48:30] 50%:	E: 0.00	dE -3.52	batch_acc 0.9600
+[INFO  11:48:32] 60%:	E: 0.00	dE -2.54	batch_acc 0.9700
+[INFO  11:48:34] 70%:	E: 0.00	dE -2.00	batch_acc 0.9800
+[INFO  11:48:35] 80%:	E: 0.00	dE -2.01	batch_acc 0.9800
+[INFO  11:48:37] 90%:	E: 0.00	dE -2.40	batch_acc 0.9750
+[INFO  11:48:40] epoch: 72 	 test_acc: 0.8918 	 mean_E: 0.0000
+[INFO  11:48:40] 0%:	E: 0.00	dE -2.75	batch_acc 0.9650
+[INFO  11:48:41] 10%:	E: 0.00	dE -2.28	batch_acc 0.9900
+[INFO  11:48:43] 20%:	E: 0.00	dE -2.22	batch_acc 0.9900
+[INFO  11:48:44] 30%:	E: 0.00	dE -2.37	batch_acc 0.9750
+[INFO  11:48:46] 40%:	E: 0.00	dE -1.72	batch_acc 0.9950
+[INFO  11:48:48] 50%:	E: 0.00	dE -2.63	batch_acc 0.9750
+[INFO  11:48:49] 60%:	E: 0.00	dE -3.11	batch_acc 0.9800
+[INFO  11:48:51] 70%:	E: 0.00	dE -2.01	batch_acc 0.9800
+[INFO  11:48:52] 80%:	E: 0.00	dE -1.53	batch_acc 0.9950
+[INFO  11:48:54] 90%:	E: 0.00	dE -2.27	batch_acc 0.9950
+[INFO  11:48:57] epoch: 73 	 test_acc: 0.8891 	 mean_E: 0.0000
+[INFO  11:48:57] 0%:	E: 0.00	dE -2.50	batch_acc 0.9800
+[INFO  11:48:59] 10%:	E: 0.00	dE -1.90	batch_acc 0.9750
+[INFO  11:49:00] 20%:	E: 0.00	dE -1.49	batch_acc 0.9900
+[INFO  11:49:02] 30%:	E: 0.00	dE -2.13	batch_acc 0.9850
+[INFO  11:49:03] 40%:	E: 0.00	dE -2.18	batch_acc 0.9900
+[INFO  11:49:05] 50%:	E: 0.00	dE -2.83	batch_acc 0.9800
+[INFO  11:49:06] 60%:	E: 0.00	dE -1.62	batch_acc 0.9900
+[INFO  11:49:08] 70%:	E: 0.00	dE -2.22	batch_acc 0.9900
+[INFO  11:49:10] 80%:	E: 0.00	dE -2.51	batch_acc 0.9700
+[INFO  11:49:11] 90%:	E: 0.00	dE -2.12	batch_acc 0.9850
+[INFO  11:49:14] epoch: 74 	 test_acc: 0.8912 	 mean_E: 0.0000
+[INFO  11:49:15] 0%:	E: 0.00	dE -2.98	batch_acc 0.9650
+[INFO  11:49:16] 10%:	E: 0.00	dE -1.34	batch_acc 1.0000
+[INFO  11:49:18] 20%:	E: 0.00	dE -2.26	batch_acc 0.9800
+[INFO  11:49:19] 30%:	E: 0.00	dE -2.44	batch_acc 0.9850
+[INFO  11:49:21] 40%:	E: 0.00	dE -1.47	batch_acc 0.9950
+[INFO  11:49:23] 50%:	E: 0.00	dE -2.02	batch_acc 0.9850
+[INFO  11:49:24] 60%:	E: 0.00	dE -2.23	batch_acc 0.9750
+[INFO  11:49:26] 70%:	E: 0.00	dE -2.49	batch_acc 0.9800
+[INFO  11:49:27] 80%:	E: 0.00	dE -2.54	batch_acc 0.9650
+[INFO  11:49:29] 90%:	E: 0.00	dE -2.64	batch_acc 0.9650
+[INFO  11:49:32] epoch: 75 	 test_acc: 0.8941 	 mean_E: 0.0000
+[INFO  11:49:32] 0%:	E: 0.00	dE -2.18	batch_acc 0.9950
+[INFO  11:49:33] 10%:	E: 0.00	dE -1.53	batch_acc 0.9950
+[INFO  11:49:35] 20%:	E: 0.00	dE -1.91	batch_acc 0.9900
+[INFO  11:49:37] 30%:	E: 0.00	dE -2.34	batch_acc 0.9800
+[INFO  11:49:38] 40%:	E: 0.00	dE -2.14	batch_acc 0.9800
+[INFO  11:49:40] 50%:	E: 0.00	dE -2.05	batch_acc 0.9800
+[INFO  11:49:41] 60%:	E: 0.00	dE -2.47	batch_acc 0.9750
+[INFO  11:49:43] 70%:	E: 0.00	dE -2.80	batch_acc 0.9850
+[INFO  11:49:44] 80%:	E: 0.00	dE -1.93	batch_acc 0.9750
+[INFO  11:49:46] 90%:	E: 0.00	dE -1.78	batch_acc 0.9850
+[INFO  11:49:49] epoch: 76 	 test_acc: 0.8928 	 mean_E: 0.0000
+[INFO  11:49:49] 0%:	E: 0.00	dE -2.57	batch_acc 0.9750
+[INFO  11:49:50] 10%:	E: 0.00	dE -2.41	batch_acc 0.9750
+[INFO  11:49:52] 20%:	E: 0.00	dE -1.68	batch_acc 0.9900
+[INFO  11:49:54] 30%:	E: 0.00	dE -2.13	batch_acc 0.9900
+[INFO  11:49:55] 40%:	E: 0.00	dE -1.87	batch_acc 0.9900
+[INFO  11:49:57] 50%:	E: 0.00	dE -2.30	batch_acc 0.9800
+[INFO  11:49:58] 60%:	E: 0.00	dE -1.83	batch_acc 0.9900
+[INFO  11:50:00] 70%:	E: 0.00	dE -2.30	batch_acc 0.9850
+[INFO  11:50:01] 80%:	E: 0.00	dE -2.86	batch_acc 0.9700
+[INFO  11:50:03] 90%:	E: 0.00	dE -2.28	batch_acc 0.9700
+[INFO  11:50:06] epoch: 77 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:50:06] 0%:	E: 0.00	dE -1.47	batch_acc 0.9950
+[INFO  11:50:08] 10%:	E: 0.00	dE -1.94	batch_acc 0.9900
+[INFO  11:50:09] 20%:	E: 0.00	dE -1.78	batch_acc 0.9850
+[INFO  11:50:11] 30%:	E: 0.00	dE -2.29	batch_acc 0.9900
+[INFO  11:50:12] 40%:	E: 0.00	dE -1.99	batch_acc 0.9900
+[INFO  11:50:14] 50%:	E: 0.00	dE -2.62	batch_acc 0.9750
+[INFO  11:50:15] 60%:	E: 0.00	dE -2.52	batch_acc 0.9600
+[INFO  11:50:17] 70%:	E: 0.00	dE -1.91	batch_acc 0.9950
+[INFO  11:50:18] 80%:	E: 0.00	dE -2.56	batch_acc 0.9700
+[INFO  11:50:20] 90%:	E: 0.00	dE -1.76	batch_acc 0.9850
+[INFO  11:50:23] epoch: 78 	 test_acc: 0.8933 	 mean_E: 0.0000
+[INFO  11:50:23] 0%:	E: 0.00	dE -2.10	batch_acc 0.9850
+[INFO  11:50:24] 10%:	E: 0.00	dE -1.76	batch_acc 0.9850
+[INFO  11:50:26] 20%:	E: 0.00	dE -2.32	batch_acc 0.9850
+[INFO  11:50:27] 30%:	E: 0.00	dE -2.03	batch_acc 1.0000
+[INFO  11:50:29] 40%:	E: 0.00	dE -2.23	batch_acc 0.9850
+[INFO  11:50:31] 50%:	E: 0.00	dE -1.99	batch_acc 0.9900
+[INFO  11:50:32] 60%:	E: 0.00	dE -2.77	batch_acc 0.9750
+[INFO  11:50:34] 70%:	E: 0.00	dE -1.83	batch_acc 0.9900
+[INFO  11:50:35] 80%:	E: 0.00	dE -2.23	batch_acc 0.9850
+[INFO  11:50:37] 90%:	E: 0.00	dE -2.03	batch_acc 0.9900
+[INFO  11:50:40] epoch: 79 	 test_acc: 0.8931 	 mean_E: 0.0000
+[INFO  11:50:40] 0%:	E: 0.00	dE -1.64	batch_acc 0.9900
+[INFO  11:50:41] 10%:	E: 0.00	dE -2.18	batch_acc 0.9750
+[INFO  11:50:43] 20%:	E: 0.00	dE -2.72	batch_acc 0.9650
+[INFO  11:50:45] 30%:	E: 0.00	dE -2.11	batch_acc 0.9700
+[INFO  11:50:46] 40%:	E: 0.00	dE -1.73	batch_acc 1.0000
+[INFO  11:50:48] 50%:	E: 0.00	dE -2.04	batch_acc 0.9850
+[INFO  11:50:49] 60%:	E: 0.00	dE -1.85	batch_acc 0.9900
+[INFO  11:50:51] 70%:	E: 0.00	dE -1.80	batch_acc 0.9900
+[INFO  11:50:52] 80%:	E: 0.00	dE -1.96	batch_acc 0.9750
+[INFO  11:50:54] 90%:	E: 0.00	dE -2.41	batch_acc 0.9800
+[INFO  11:50:57] epoch: 80 	 test_acc: 0.8924 	 mean_E: 0.0000
+[INFO  11:50:57] 0%:	E: 0.00	dE -2.52	batch_acc 0.9750
+[INFO  11:50:58] 10%:	E: 0.00	dE -2.36	batch_acc 0.9800
+[INFO  11:51:00] 20%:	E: 0.00	dE -2.23	batch_acc 0.9850
+[INFO  11:51:02] 30%:	E: 0.00	dE -1.70	batch_acc 0.9900
+[INFO  11:51:03] 40%:	E: 0.00	dE -1.67	batch_acc 0.9850
+[INFO  11:51:05] 50%:	E: 0.00	dE -1.99	batch_acc 0.9950
+[INFO  11:51:06] 60%:	E: 0.00	dE -2.44	batch_acc 0.9850
+[INFO  11:51:08] 70%:	E: 0.00	dE -2.59	batch_acc 0.9750
+[INFO  11:51:10] 80%:	E: 0.00	dE -2.57	batch_acc 0.9750
+[INFO  11:51:11] 90%:	E: 0.00	dE -1.86	batch_acc 0.9800
+[INFO  11:51:14] epoch: 81 	 test_acc: 0.8905 	 mean_E: 0.0000
+[INFO  11:51:14] 0%:	E: 0.00	dE -1.48	batch_acc 0.9950
+[INFO  11:51:16] 10%:	E: 0.00	dE -2.04	batch_acc 0.9800
+[INFO  11:51:17] 20%:	E: 0.00	dE -2.37	batch_acc 0.9750
+[INFO  11:51:19] 30%:	E: 0.00	dE -2.09	batch_acc 0.9850
+[INFO  11:51:20] 40%:	E: 0.00	dE -2.03	batch_acc 0.9850
+[INFO  11:51:22] 50%:	E: 0.00	dE -2.45	batch_acc 0.9600
+[INFO  11:51:23] 60%:	E: 0.00	dE -2.16	batch_acc 0.9800
+[INFO  11:51:25] 70%:	E: 0.00	dE -2.34	batch_acc 0.9850
+[INFO  11:51:26] 80%:	E: 0.00	dE -2.62	batch_acc 0.9650
+[INFO  11:51:28] 90%:	E: 0.00	dE -2.51	batch_acc 0.9850
+[INFO  11:51:31] epoch: 82 	 test_acc: 0.8905 	 mean_E: 0.0000
+[INFO  11:51:31] 0%:	E: 0.00	dE -1.91	batch_acc 0.9950
+[INFO  11:51:33] 10%:	E: 0.00	dE -2.32	batch_acc 0.9800
+[INFO  11:51:34] 20%:	E: 0.00	dE -2.40	batch_acc 0.9750
+[INFO  11:51:36] 30%:	E: 0.00	dE -1.82	batch_acc 0.9850
+[INFO  11:51:37] 40%:	E: 0.00	dE -2.32	batch_acc 0.9700
+[INFO  11:51:39] 50%:	E: 0.00	dE -1.94	batch_acc 0.9800
+[INFO  11:51:41] 60%:	E: 0.00	dE -2.31	batch_acc 0.9900
+[INFO  11:51:42] 70%:	E: 0.00	dE -2.00	batch_acc 0.9850
+[INFO  11:51:44] 80%:	E: 0.00	dE -2.00	batch_acc 0.9900
+[INFO  11:51:45] 90%:	E: 0.00	dE -2.34	batch_acc 0.9700
+[INFO  11:51:48] epoch: 83 	 test_acc: 0.8924 	 mean_E: 0.0000
+[INFO  11:51:48] 0%:	E: 0.00	dE -1.84	batch_acc 0.9850
+[INFO  11:51:50] 10%:	E: 0.00	dE -1.98	batch_acc 0.9900
+[INFO  11:51:51] 20%:	E: 0.00	dE -1.62	batch_acc 0.9900
+[INFO  11:51:53] 30%:	E: 0.00	dE -1.60	batch_acc 0.9900
+[INFO  11:51:55] 40%:	E: 0.00	dE -1.82	batch_acc 0.9900
+[INFO  11:51:56] 50%:	E: 0.00	dE -2.26	batch_acc 0.9800
+[INFO  11:51:58] 60%:	E: 0.00	dE -2.87	batch_acc 0.9450
+[INFO  11:51:59] 70%:	E: 0.00	dE -1.77	batch_acc 0.9850
+[INFO  11:52:01] 80%:	E: 0.00	dE -2.36	batch_acc 0.9650
+[INFO  11:52:02] 90%:	E: 0.00	dE -1.92	batch_acc 0.9850
+[INFO  11:52:05] epoch: 84 	 test_acc: 0.8917 	 mean_E: 0.0000
+[INFO  11:52:06] 0%:	E: 0.00	dE -1.46	batch_acc 1.0000
+[INFO  11:52:07] 10%:	E: 0.00	dE -2.34	batch_acc 0.9900
+[INFO  11:52:09] 20%:	E: 0.00	dE -1.95	batch_acc 0.9850
+[INFO  11:52:10] 30%:	E: 0.00	dE -1.78	batch_acc 0.9900
+[INFO  11:52:12] 40%:	E: 0.00	dE -1.87	batch_acc 0.9950
+[INFO  11:52:13] 50%:	E: 0.00	dE -2.45	batch_acc 0.9800
+[INFO  11:52:15] 60%:	E: 0.00	dE -1.72	batch_acc 0.9950
+[INFO  11:52:16] 70%:	E: 0.00	dE -1.38	batch_acc 0.9950
+[INFO  11:52:18] 80%:	E: 0.00	dE -2.17	batch_acc 0.9750
+[INFO  11:52:19] 90%:	E: 0.00	dE -2.26	batch_acc 0.9850
+[INFO  11:52:23] epoch: 85 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:52:23] 0%:	E: 0.00	dE -1.51	batch_acc 0.9950
+[INFO  11:52:24] 10%:	E: 0.00	dE -2.39	batch_acc 0.9800
+[INFO  11:52:26] 20%:	E: 0.00	dE -1.68	batch_acc 0.9900
+[INFO  11:52:27] 30%:	E: 0.00	dE -1.82	batch_acc 0.9900
+[INFO  11:52:29] 40%:	E: 0.00	dE -2.03	batch_acc 0.9800
+[INFO  11:52:30] 50%:	E: 0.00	dE -2.21	batch_acc 0.9750
+[INFO  11:52:32] 60%:	E: 0.00	dE -2.11	batch_acc 0.9850
+[INFO  11:52:33] 70%:	E: 0.00	dE -2.20	batch_acc 0.9850
+[INFO  11:52:35] 80%:	E: 0.00	dE -1.87	batch_acc 0.9950
+[INFO  11:52:36] 90%:	E: 0.00	dE -1.72	batch_acc 0.9750
+[INFO  11:52:39] epoch: 86 	 test_acc: 0.8909 	 mean_E: 0.0000
+[INFO  11:52:40] 0%:	E: 0.00	dE -2.15	batch_acc 0.9800
+[INFO  11:52:41] 10%:	E: 0.00	dE -1.93	batch_acc 0.9900
+[INFO  11:52:43] 20%:	E: 0.00	dE -1.53	batch_acc 0.9900
+[INFO  11:52:44] 30%:	E: 0.00	dE -1.71	batch_acc 0.9850
+[INFO  11:52:46] 40%:	E: 0.00	dE -1.92	batch_acc 0.9800
+[INFO  11:52:47] 50%:	E: 0.00	dE -2.09	batch_acc 0.9800
+[INFO  11:52:49] 60%:	E: 0.00	dE -1.94	batch_acc 0.9850
+[INFO  11:52:50] 70%:	E: 0.00	dE -2.15	batch_acc 0.9850
+[INFO  11:52:52] 80%:	E: 0.00	dE -1.67	batch_acc 0.9900
+[INFO  11:52:53] 90%:	E: 0.00	dE -1.86	batch_acc 0.9900
+[INFO  11:52:57] epoch: 87 	 test_acc: 0.8908 	 mean_E: 0.0000
+[INFO  11:52:57] 0%:	E: 0.00	dE -1.54	batch_acc 0.9900
+[INFO  11:52:58] 10%:	E: 0.00	dE -1.60	batch_acc 0.9950
+[INFO  11:53:00] 20%:	E: 0.00	dE -1.68	batch_acc 0.9950
+[INFO  11:53:01] 30%:	E: 0.00	dE -2.05	batch_acc 0.9800
+[INFO  11:53:03] 40%:	E: 0.00	dE -1.81	batch_acc 0.9850
+[INFO  11:53:04] 50%:	E: 0.00	dE -1.95	batch_acc 0.9900
+[INFO  11:53:06] 60%:	E: 0.00	dE -2.12	batch_acc 0.9750
+[INFO  11:53:08] 70%:	E: 0.00	dE -2.48	batch_acc 0.9850
+[INFO  11:53:09] 80%:	E: 0.00	dE -1.48	batch_acc 0.9950
+[INFO  11:53:11] 90%:	E: 0.00	dE -1.47	batch_acc 1.0000
+[INFO  11:53:14] epoch: 88 	 test_acc: 0.8932 	 mean_E: 0.0000
+[INFO  11:53:14] 0%:	E: 0.00	dE -2.61	batch_acc 0.9700
+[INFO  11:53:15] 10%:	E: 0.00	dE -2.15	batch_acc 0.9800
+[INFO  11:53:17] 20%:	E: 0.00	dE -1.68	batch_acc 0.9850
+[INFO  11:53:18] 30%:	E: 0.00	dE -1.98	batch_acc 0.9800
+[INFO  11:53:20] 40%:	E: 0.00	dE -1.68	batch_acc 0.9850
+[INFO  11:53:21] 50%:	E: 0.00	dE -2.14	batch_acc 0.9850
+[INFO  11:53:23] 60%:	E: 0.00	dE -1.63	batch_acc 1.0000
+[INFO  11:53:25] 70%:	E: 0.00	dE -2.36	batch_acc 0.9800
+[INFO  11:53:26] 80%:	E: 0.00	dE -2.32	batch_acc 0.9800
+[INFO  11:53:27] 90%:	E: 0.00	dE -1.91	batch_acc 0.9850
+[INFO  11:53:30] epoch: 89 	 test_acc: 0.8929 	 mean_E: 0.0000
+[INFO  11:53:31] 0%:	E: 0.00	dE -1.71	batch_acc 0.9900
+[INFO  11:53:32] 10%:	E: 0.00	dE -2.35	batch_acc 0.9800
+[INFO  11:53:34] 20%:	E: 0.00	dE -2.27	batch_acc 0.9900
+[INFO  11:53:35] 30%:	E: 0.00	dE -1.29	batch_acc 0.9950
+[INFO  11:53:37] 40%:	E: 0.00	dE -2.14	batch_acc 0.9750
+[INFO  11:53:39] 50%:	E: 0.00	dE -2.05	batch_acc 0.9800
+[INFO  11:53:40] 60%:	E: 0.00	dE -1.95	batch_acc 0.9800
+[INFO  11:53:42] 70%:	E: 0.00	dE -1.40	batch_acc 0.9950
+[INFO  11:53:43] 80%:	E: 0.00	dE -3.02	batch_acc 0.9700
+[INFO  11:53:45] 90%:	E: 0.00	dE -1.89	batch_acc 0.9900
+[INFO  11:53:48] epoch: 90 	 test_acc: 0.8926 	 mean_E: 0.0000
+[INFO  11:53:48] 0%:	E: 0.00	dE -1.71	batch_acc 0.9900
+[INFO  11:53:50] 10%:	E: 0.00	dE -2.23	batch_acc 0.9700
+[INFO  11:53:51] 20%:	E: 0.00	dE -1.75	batch_acc 0.9950
+[INFO  11:53:53] 30%:	E: 0.00	dE -1.66	batch_acc 0.9900
+[INFO  11:53:54] 40%:	E: 0.00	dE -1.84	batch_acc 0.9900
+[INFO  11:53:56] 50%:	E: 0.00	dE -2.55	batch_acc 0.9750
+[INFO  11:53:58] 60%:	E: 0.00	dE -2.38	batch_acc 0.9900
+[INFO  11:53:59] 70%:	E: 0.00	dE -1.97	batch_acc 0.9850
+[INFO  11:54:01] 80%:	E: 0.00	dE -2.44	batch_acc 0.9800
+[INFO  11:54:02] 90%:	E: 0.00	dE -2.06	batch_acc 0.9900
+[INFO  11:54:05] epoch: 91 	 test_acc: 0.8893 	 mean_E: 0.0000
+[INFO  11:54:05] 0%:	E: 0.00	dE -2.03	batch_acc 0.9850
+[INFO  11:54:07] 10%:	E: 0.00	dE -2.31	batch_acc 0.9800
+[INFO  11:54:09] 20%:	E: 0.00	dE -1.63	batch_acc 0.9900
+[INFO  11:54:10] 30%:	E: 0.00	dE -2.53	batch_acc 0.9750
+[INFO  11:54:12] 40%:	E: 0.00	dE -1.65	batch_acc 0.9950
+[INFO  11:54:13] 50%:	E: 0.00	dE -2.16	batch_acc 0.9750
+[INFO  11:54:15] 60%:	E: 0.00	dE -1.78	batch_acc 0.9850
+[INFO  11:54:16] 70%:	E: 0.00	dE -2.21	batch_acc 0.9850
+[INFO  11:54:18] 80%:	E: 0.00	dE -2.77	batch_acc 0.9750
+[INFO  11:54:19] 90%:	E: 0.00	dE -2.38	batch_acc 0.9800
+[INFO  11:54:23] epoch: 92 	 test_acc: 0.8864 	 mean_E: 0.0000
+[INFO  11:54:23] 0%:	E: 0.00	dE -2.74	batch_acc 0.9650
+[INFO  11:54:24] 10%:	E: 0.00	dE -1.87	batch_acc 1.0000
+[INFO  11:54:26] 20%:	E: 0.00	dE -1.73	batch_acc 0.9800
+[INFO  11:54:27] 30%:	E: 0.00	dE -1.56	batch_acc 0.9850
+[INFO  11:54:29] 40%:	E: 0.00	dE -2.00	batch_acc 0.9850
+[INFO  11:54:30] 50%:	E: 0.00	dE -1.48	batch_acc 1.0000
+[INFO  11:54:32] 60%:	E: 0.00	dE -2.40	batch_acc 0.9850
+[INFO  11:54:34] 70%:	E: 0.00	dE -2.39	batch_acc 0.9700
+[INFO  11:54:35] 80%:	E: 0.00	dE -1.72	batch_acc 0.9900
+[INFO  11:54:37] 90%:	E: 0.00	dE -2.67	batch_acc 0.9850
+[INFO  11:54:40] epoch: 93 	 test_acc: 0.8914 	 mean_E: 0.0000
+[INFO  11:54:40] 0%:	E: 0.00	dE -2.17	batch_acc 0.9750
+[INFO  11:54:41] 10%:	E: 0.00	dE -1.98	batch_acc 0.9800
+[INFO  11:54:43] 20%:	E: 0.00	dE -1.64	batch_acc 0.9850
+[INFO  11:54:44] 30%:	E: 0.00	dE -1.71	batch_acc 0.9800
+[INFO  11:54:46] 40%:	E: 0.00	dE -1.70	batch_acc 1.0000
+[INFO  11:54:48] 50%:	E: 0.00	dE -2.11	batch_acc 0.9850
+[INFO  11:54:49] 60%:	E: 0.00	dE -1.71	batch_acc 0.9900
+[INFO  11:54:51] 70%:	E: 0.00	dE -2.30	batch_acc 0.9750
+[INFO  11:54:52] 80%:	E: 0.00	dE -1.80	batch_acc 0.9900
+[INFO  11:54:54] 90%:	E: 0.00	dE -2.66	batch_acc 0.9800
+[INFO  11:54:57] epoch: 94 	 test_acc: 0.8905 	 mean_E: 0.0000
+[INFO  11:54:57] 0%:	E: 0.00	dE -1.66	batch_acc 0.9950
+[INFO  11:54:59] 10%:	E: 0.00	dE -2.06	batch_acc 0.9850
+[INFO  11:55:01] 20%:	E: 0.00	dE -1.91	batch_acc 0.9900
+[INFO  11:55:02] 30%:	E: 0.00	dE -2.24	batch_acc 0.9900
+[INFO  11:55:03] 40%:	E: 0.00	dE -1.52	batch_acc 1.0000
+[INFO  11:55:05] 50%:	E: 0.00	dE -2.29	batch_acc 0.9800
+[INFO  11:55:06] 60%:	E: 0.00	dE -2.28	batch_acc 0.9800
+[INFO  11:55:08] 70%:	E: 0.00	dE -2.30	batch_acc 0.9800
+[INFO  11:55:10] 80%:	E: 0.00	dE -2.70	batch_acc 0.9700
+[INFO  11:55:11] 90%:	E: 0.00	dE -2.12	batch_acc 0.9800
+[INFO  11:55:14] epoch: 95 	 test_acc: 0.8896 	 mean_E: 0.0000
+[INFO  11:55:14] 0%:	E: 0.00	dE -2.26	batch_acc 0.9950
+[INFO  11:55:16] 10%:	E: 0.00	dE -2.11	batch_acc 0.9900
+[INFO  11:55:18] 20%:	E: 0.00	dE -2.07	batch_acc 0.9750
+[INFO  11:55:19] 30%:	E: 0.00	dE -2.25	batch_acc 0.9700
+[INFO  11:55:21] 40%:	E: 0.00	dE -1.49	batch_acc 0.9950
+[INFO  11:55:22] 50%:	E: 0.00	dE -1.94	batch_acc 0.9850
+[INFO  11:55:24] 60%:	E: 0.00	dE -1.73	batch_acc 0.9850
+[INFO  11:55:25] 70%:	E: 0.00	dE -1.99	batch_acc 0.9750
+[INFO  11:55:27] 80%:	E: 0.00	dE -2.07	batch_acc 0.9850
+[INFO  11:55:28] 90%:	E: 0.00	dE -1.93	batch_acc 0.9900
+[INFO  11:55:31] epoch: 96 	 test_acc: 0.8877 	 mean_E: 0.0000
+[INFO  11:55:31] 0%:	E: 0.00	dE -2.30	batch_acc 0.9750
+[INFO  11:55:33] 10%:	E: 0.00	dE -1.75	batch_acc 0.9900
+[INFO  11:55:34] 20%:	E: 0.00	dE -1.40	batch_acc 0.9950
+[INFO  11:55:36] 30%:	E: 0.00	dE -2.16	batch_acc 0.9800
+[INFO  11:55:38] 40%:	E: 0.00	dE -1.83	batch_acc 0.9850
+[INFO  11:55:39] 50%:	E: 0.00	dE -2.25	batch_acc 0.9800
+[INFO  11:55:41] 60%:	E: 0.00	dE -1.81	batch_acc 0.9850
+[INFO  11:55:42] 70%:	E: 0.00	dE -1.89	batch_acc 0.9800
+[INFO  11:55:44] 80%:	E: 0.00	dE -1.32	batch_acc 1.0000
+[INFO  11:55:45] 90%:	E: 0.00	dE -2.94	batch_acc 0.9600
+[INFO  11:55:48] epoch: 97 	 test_acc: 0.8897 	 mean_E: 0.0000
+[INFO  11:55:48] 0%:	E: 0.00	dE -1.75	batch_acc 0.9800
+[INFO  11:55:50] 10%:	E: 0.00	dE -1.72	batch_acc 0.9950
+[INFO  11:55:51] 20%:	E: 0.00	dE -2.17	batch_acc 0.9900
+[INFO  11:55:53] 30%:	E: 0.00	dE -1.99	batch_acc 0.9800
+[INFO  11:55:54] 40%:	E: 0.00	dE -1.31	batch_acc 0.9950
+[INFO  11:55:56] 50%:	E: 0.00	dE -1.65	batch_acc 0.9900
+[INFO  11:55:57] 60%:	E: 0.00	dE -2.46	batch_acc 0.9900
+[INFO  11:55:59] 70%:	E: 0.00	dE -2.07	batch_acc 0.9750
+[INFO  11:56:01] 80%:	E: 0.00	dE -2.02	batch_acc 0.9800
+[INFO  11:56:02] 90%:	E: 0.00	dE -1.62	batch_acc 0.9900
+[INFO  11:56:05] epoch: 98 	 test_acc: 0.8917 	 mean_E: 0.0000
+[INFO  11:56:05] 0%:	E: 0.00	dE -1.31	batch_acc 1.0000
+[INFO  11:56:07] 10%:	E: 0.00	dE -1.92	batch_acc 0.9850
+[INFO  11:56:09] 20%:	E: 0.00	dE -1.38	batch_acc 1.0000
+[INFO  11:56:10] 30%:	E: 0.00	dE -2.62	batch_acc 0.9750
+[INFO  11:56:12] 40%:	E: 0.00	dE -1.72	batch_acc 0.9850
+[INFO  11:56:13] 50%:	E: 0.00	dE -1.73	batch_acc 0.9850
+[INFO  11:56:15] 60%:	E: 0.00	dE -1.89	batch_acc 0.9900
+[INFO  11:56:16] 70%:	E: 0.00	dE -2.29	batch_acc 0.9800
+[INFO  11:56:18] 80%:	E: 0.00	dE -1.82	batch_acc 0.9900
+[INFO  11:56:20] 90%:	E: 0.00	dE -1.60	batch_acc 0.9900
+[INFO  11:56:23] epoch: 99 	 test_acc: 0.8892 	 mean_E: 0.0000
+[INFO  11:56:23] 0%:	E: 0.00	dE -1.46	batch_acc 0.9950
+[INFO  11:56:25] 10%:	E: 0.00	dE -1.76	batch_acc 0.9950
+[INFO  11:56:26] 20%:	E: 0.00	dE -1.96	batch_acc 0.9950
+[INFO  11:56:28] 30%:	E: 0.00	dE -1.76	batch_acc 0.9800
+[INFO  11:56:29] 40%:	E: 0.00	dE -1.94	batch_acc 0.9850
+[INFO  11:56:31] 50%:	E: 0.00	dE -1.94	batch_acc 0.9950
+[INFO  11:56:32] 60%:	E: 0.00	dE -1.61	batch_acc 0.9900
+[INFO  11:56:34] 70%:	E: 0.00	dE -2.02	batch_acc 0.9850
+[INFO  11:56:35] 80%:	E: 0.00	dE -1.51	batch_acc 0.9950
+[INFO  11:56:37] 90%:	E: 0.00	dE -2.31	batch_acc 0.9800
+[INFO  11:56:40] epoch: 100 	 test_acc: 0.8897 	 mean_E: 0.0000
